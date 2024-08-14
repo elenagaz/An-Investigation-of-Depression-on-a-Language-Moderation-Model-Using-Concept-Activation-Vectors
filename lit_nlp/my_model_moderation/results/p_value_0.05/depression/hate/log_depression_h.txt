@@ -1,0 +1,616 @@
+C:\Users\elena\miniconda3\envs\lit-nlp2\python.exe C:\Users\elena\PycharmProjects\lit_bachelor\lit_nlp\examples\my_model_moderation\moderation_demo_2.py 
+2024-08-03 15:09:42.189378: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-08-03 15:09:42.190837: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-08-03 15:09:52.949190: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-08-03 15:09:52.952775: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2024-08-03 15:09:52.954573: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2024-08-03 15:09:52.955781: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2024-08-03 15:09:52.956922: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2024-08-03 15:09:52.958501: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2024-08-03 15:09:52.959646: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2024-08-03 15:09:52.960816: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2024-08-03 15:09:52.961459: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0803 15:09:52.963027 17292 moderation_demo_2.py:52] Working directory: KoalaAI/Text-Moderation
+2024-08-03 15:09:54.881546: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFDebertaForSequenceClassification: ['deberta.embeddings.position_ids']
+- This IS expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFDebertaForSequenceClassification were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDebertaForSequenceClassification for predictions without further training.
+I0803 15:10:01.070475 17292 dev_server.py:90] 
+ (    (           
+ )\ ) )\ )  *   ) 
+(()/((()/(` )  /( 
+ /(_))/(_))( )(_))
+(_)) (_)) (_(_()) 
+| |  |_ _||_   _| 
+| |__ | |   | |   
+|____|___|  |_|   
+
+
+I0803 15:10:01.070475 17292 dev_server.py:91] Starting LIT server...
+W0803 15:10:01.070475 17292 model.py:114] Unable to infer init spec for model 'ModerationModel'. Unable to infer a type for parameter 'model_name' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0803 15:10:01.070475 17292 dataset.py:154] Unable to infer init spec for dataset 'ModerationDataset'. Unable to infer a type for parameter 'file_path' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0803 15:10:01.084629 17292 dataset.py:154] Unable to infer init spec for dataset 'NoneDataset'. Unable to infer a type for parameter 'models' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+I0803 15:10:01.085598 17292 rouge_scorer.py:83] Using default tokenizer.
+I0803 15:10:01.091594 17292 wsgi_serving.py:46] 
+
+Starting Server on port 8082
+You can navigate to http://127.0.0.1:8082
+
+
+I0803 15:10:01.108597 17292 _internal.py:187] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8082
+I0803 15:10:01.108597 17292 _internal.py:187] Press CTRL+C to quit
+I0803 15:10:23.184916 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:10:23] "GET / HTTP/1.1" 200 -
+I0803 15:10:23.350920 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:10:23] "GET /main.js HTTP/1.1" 200 -
+I0803 15:10:23.858908 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:10:23] "GET /static/favicon.png HTTP/1.1" 200 -
+I0803 15:10:24.330028 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:10:24] "POST /get_info HTTP/1.1" 200 -
+I0803 15:10:24.507329 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:10:24] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0803 15:10:24.520343 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:10:24] "GET /static/onboarding_1_welcome.gif HTTP/1.1" 200 -
+I0803 15:10:24.650545 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 15:10:24.652545 17292 caching.py:306] CachingModelWrapper 'moderation': 648 misses out of 648 inputs
+I0803 15:10:24.653545 17292 moderation.py:316] -------------------------> using predict here
+You're using a DebertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+I0803 15:13:11.910511 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:16:18.613316 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:19:40.881673 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:24:51.148437 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:25:06.575468 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:25:19.179988 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:25:32.625604 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:25:52.993245 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:27:41.576058 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:27:55.374147 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:28:41.580301 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:33:34.603601 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:33:59.136880 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:34:17.444954 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:34:37.964576 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:34:49.660984 17292 moderation.py:316] -------------------------> using predict here
+I0803 15:34:53.188268 17292 caching.py:314] Received 648 predictions from model
+I0803 15:34:53.309003 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:34:53] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0803 15:34:53.369194 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 15:34:53.371140 17292 projection.py:183] Projection request: instance key: frozenset({('field_name', 'cls_emb'), ('use_input', False), ('model_name', 'moderation'), ('proj_kw', frozenset({('n_components', 3)}))})
+I0803 15:34:53.407382 17292 projection.py:163] Creating new projection instance on 648 points
+I0803 15:34:53.431337 17292 umap.py:38] UMAP input x_train: (648, 768)
+I0803 15:35:05.080262 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:35:05] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0803 15:35:05.082264 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 15:35:05.084263 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:35:05.085265 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:35:05.085265 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:35:05.085265 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:35:05.099262 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:35:05.099262 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:35:05.100262 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:35:05.100262 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:35:05.101264 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:35:05] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0803 15:54:42.656287 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:54:42] "POST /get_info HTTP/1.1" 200 -
+I0803 15:54:42.801287 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:54:42] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0803 15:54:42.966289 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 15:54:43.025284 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:54:43] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0803 15:54:43.036286 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 15:54:43.039286 17292 projection.py:183] Projection request: instance key: frozenset({('field_name', 'cls_emb'), ('use_input', False), ('model_name', 'moderation'), ('proj_kw', frozenset({('n_components', 3)}))})
+I0803 15:54:43.049299 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:54:43] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0803 15:54:43.060280 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 15:54:43.063282 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:54:43.063282 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:54:43.063282 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:54:43.064282 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:54:43.082286 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:54:43.082286 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:54:43.084282 17292 metrics.py:56] Skipping 'tokens': No parent provided.
+I0803 15:54:43.084282 17292 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0803 15:54:43.086284 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 15:54:43] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0803 15:57:34.009619 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+W0803 15:57:34.022678 17292 caching.py:288] Attmepting to retrieve 42 (of 648) predictions from the cache where the cache key is None - this can be from a missing or empty example id. These will call model.predict() on this and subsequent calls.
+I0803 15:57:34.022678 17292 caching.py:306] CachingModelWrapper 'moderation': 42 misses out of 648 inputs
+I0803 15:57:34.022678 17292 moderation.py:316] -------------------------> using predict here
+I0803 16:02:34.630479 17292 moderation.py:316] -------------------------> using predict here
+I0803 16:02:39.017722 17292 caching.py:314] Received 42 predictions from model
+I0803 16:02:39.113613 17292 compare_predictions.py:57] Comparing of data
+E0803 16:02:39.119853 17292 compare_predictions.py:14] Difference found at [0]/input_embs (numpy arrays differ)
+E0803 16:02:39.148033 17292 compare_predictions.py:14] Difference found at [0]/cls_grad (numpy arrays differ)
+E0803 16:02:39.150031 17292 compare_predictions.py:14] Difference found at [0]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:39.151026 17292 compare_predictions.py:14] Difference found at [1]/input_embs (numpy arrays differ)
+E0803 16:02:39.171026 17292 compare_predictions.py:14] Difference found at [1]/cls_grad (numpy arrays differ)
+E0803 16:02:39.173026 17292 compare_predictions.py:14] Difference found at [1]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:39.642190 17292 compare_predictions.py:14] Difference found at [8]/cls_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/input_embs (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_0/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_1/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_2/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_3/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_4/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_5/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_6/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_7/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_8/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_9/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_10/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_11/avg_emb (numpy arrays differ)
+E0803 16:02:39.643152 17292 compare_predictions.py:14] Difference found at [8]/layer_12/avg_emb (numpy arrays differ)
+E0803 16:02:39.728948 17292 compare_predictions.py:14] Difference found at [8]/layer_1/attention (numpy arrays differ)
+E0803 16:02:39.739401 17292 compare_predictions.py:14] Difference found at [8]/layer_2/attention (numpy arrays differ)
+E0803 16:02:39.750326 17292 compare_predictions.py:14] Difference found at [8]/layer_3/attention (numpy arrays differ)
+E0803 16:02:39.762324 17292 compare_predictions.py:14] Difference found at [8]/layer_4/attention (numpy arrays differ)
+E0803 16:02:39.772783 17292 compare_predictions.py:14] Difference found at [8]/layer_5/attention (numpy arrays differ)
+E0803 16:02:39.782742 17292 compare_predictions.py:14] Difference found at [8]/layer_6/attention (numpy arrays differ)
+E0803 16:02:39.787902 17292 compare_predictions.py:14] Difference found at [8]/layer_7/attention (numpy arrays differ)
+E0803 16:02:39.794076 17292 compare_predictions.py:14] Difference found at [8]/layer_8/attention (numpy arrays differ)
+E0803 16:02:39.805077 17292 compare_predictions.py:14] Difference found at [8]/layer_9/attention (numpy arrays differ)
+E0803 16:02:39.814860 17292 compare_predictions.py:14] Difference found at [8]/layer_10/attention (numpy arrays differ)
+E0803 16:02:39.821041 17292 compare_predictions.py:14] Difference found at [8]/layer_11/attention (numpy arrays differ)
+E0803 16:02:39.831073 17292 compare_predictions.py:14] Difference found at [8]/layer_12/attention (numpy arrays differ)
+E0803 16:02:39.831073 17292 compare_predictions.py:14] Difference found at [8]/probas (numpy arrays differ)
+E0803 16:02:39.837043 17292 compare_predictions.py:14] Difference found at [8]/cls_grad (numpy arrays differ)
+E0803 16:02:39.839041 17292 compare_predictions.py:14] Difference found at [8]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:39.839041 17292 compare_predictions.py:14] Difference found at [9]/input_embs (numpy arrays differ)
+E0803 16:02:39.944588 17292 compare_predictions.py:14] Difference found at [9]/cls_grad (numpy arrays differ)
+E0803 16:02:39.948755 17292 compare_predictions.py:14] Difference found at [9]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.137694 17292 compare_predictions.py:14] Difference found at [15]/input_embs (numpy arrays differ)
+E0803 16:02:40.144869 17292 compare_predictions.py:14] Difference found at [15]/cls_grad (numpy arrays differ)
+E0803 16:02:40.146898 17292 compare_predictions.py:14] Difference found at [15]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.146898 17292 compare_predictions.py:14] Difference found at [16]/input_embs (numpy arrays differ)
+E0803 16:02:40.166857 17292 compare_predictions.py:14] Difference found at [16]/cls_grad (numpy arrays differ)
+E0803 16:02:40.168870 17292 compare_predictions.py:14] Difference found at [16]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.180074 17292 compare_predictions.py:14] Difference found at [18]/input_embs (numpy arrays differ)
+E0803 16:02:40.210057 17292 compare_predictions.py:14] Difference found at [18]/cls_grad (numpy arrays differ)
+E0803 16:02:40.211057 17292 compare_predictions.py:14] Difference found at [18]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.212120 17292 compare_predictions.py:14] Difference found at [19]/input_embs (numpy arrays differ)
+E0803 16:02:40.258058 17292 compare_predictions.py:14] Difference found at [19]/cls_grad (numpy arrays differ)
+E0803 16:02:40.261058 17292 compare_predictions.py:14] Difference found at [19]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.281287 17292 compare_predictions.py:14] Difference found at [21]/input_embs (numpy arrays differ)
+E0803 16:02:40.308471 17292 compare_predictions.py:14] Difference found at [21]/cls_grad (numpy arrays differ)
+E0803 16:02:40.309471 17292 compare_predictions.py:14] Difference found at [21]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.400732 17292 compare_predictions.py:14] Difference found at [28]/input_embs (numpy arrays differ)
+E0803 16:02:40.409909 17292 compare_predictions.py:14] Difference found at [28]/cls_grad (numpy arrays differ)
+E0803 16:02:40.410908 17292 compare_predictions.py:14] Difference found at [28]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.557641 17292 compare_predictions.py:14] Difference found at [38]/input_embs (numpy arrays differ)
+E0803 16:02:40.611837 17292 compare_predictions.py:14] Difference found at [38]/cls_grad (numpy arrays differ)
+E0803 16:02:40.685401 17292 compare_predictions.py:14] Difference found at [38]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.686402 17292 compare_predictions.py:14] Difference found at [39]/input_embs (numpy arrays differ)
+E0803 16:02:40.692431 17292 compare_predictions.py:14] Difference found at [39]/cls_grad (numpy arrays differ)
+E0803 16:02:40.693396 17292 compare_predictions.py:14] Difference found at [39]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.816396 17292 compare_predictions.py:14] Difference found at [42]/input_embs (numpy arrays differ)
+E0803 16:02:40.826008 17292 compare_predictions.py:14] Difference found at [42]/cls_grad (numpy arrays differ)
+E0803 16:02:40.827063 17292 compare_predictions.py:14] Difference found at [42]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.840009 17292 compare_predictions.py:14] Difference found at [44]/input_embs (numpy arrays differ)
+E0803 16:02:40.847008 17292 compare_predictions.py:14] Difference found at [44]/cls_grad (numpy arrays differ)
+E0803 16:02:40.848008 17292 compare_predictions.py:14] Difference found at [44]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:40.848008 17292 compare_predictions.py:14] Difference found at [45]/input_embs (numpy arrays differ)
+E0803 16:02:40.972019 17292 compare_predictions.py:14] Difference found at [45]/cls_grad (numpy arrays differ)
+E0803 16:02:41.044637 17292 compare_predictions.py:14] Difference found at [45]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:41.332399 17292 compare_predictions.py:14] Difference found at [50]/input_embs (numpy arrays differ)
+E0803 16:02:41.340526 17292 compare_predictions.py:14] Difference found at [50]/cls_grad (numpy arrays differ)
+E0803 16:02:41.341526 17292 compare_predictions.py:14] Difference found at [50]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:41.507909 17292 compare_predictions.py:14] Difference found at [56]/input_embs (numpy arrays differ)
+E0803 16:02:41.514910 17292 compare_predictions.py:14] Difference found at [56]/cls_grad (numpy arrays differ)
+E0803 16:02:41.514910 17292 compare_predictions.py:14] Difference found at [56]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:42.068848 17292 compare_predictions.py:14] Difference found at [61]/cls_emb (numpy arrays differ)
+E0803 16:02:42.068848 17292 compare_predictions.py:14] Difference found at [61]/input_embs (numpy arrays differ)
+E0803 16:02:42.069860 17292 compare_predictions.py:14] Difference found at [61]/layer_1/avg_emb (numpy arrays differ)
+E0803 16:02:42.070851 17292 compare_predictions.py:14] Difference found at [61]/layer_2/avg_emb (numpy arrays differ)
+E0803 16:02:42.070851 17292 compare_predictions.py:14] Difference found at [61]/layer_3/avg_emb (numpy arrays differ)
+E0803 16:02:42.070851 17292 compare_predictions.py:14] Difference found at [61]/layer_4/avg_emb (numpy arrays differ)
+E0803 16:02:42.070851 17292 compare_predictions.py:14] Difference found at [61]/layer_5/avg_emb (numpy arrays differ)
+E0803 16:02:42.070851 17292 compare_predictions.py:14] Difference found at [61]/layer_6/avg_emb (numpy arrays differ)
+E0803 16:02:42.152263 17292 compare_predictions.py:14] Difference found at [61]/layer_7/avg_emb (numpy arrays differ)
+E0803 16:02:42.152263 17292 compare_predictions.py:14] Difference found at [61]/layer_8/avg_emb (numpy arrays differ)
+E0803 16:02:42.152263 17292 compare_predictions.py:14] Difference found at [61]/layer_9/avg_emb (numpy arrays differ)
+E0803 16:02:42.152263 17292 compare_predictions.py:14] Difference found at [61]/layer_10/avg_emb (numpy arrays differ)
+E0803 16:02:42.152263 17292 compare_predictions.py:14] Difference found at [61]/layer_11/avg_emb (numpy arrays differ)
+E0803 16:02:42.152263 17292 compare_predictions.py:14] Difference found at [61]/layer_12/avg_emb (numpy arrays differ)
+E0803 16:02:42.164348 17292 compare_predictions.py:14] Difference found at [61]/layer_1/attention (numpy arrays differ)
+E0803 16:02:42.173303 17292 compare_predictions.py:14] Difference found at [61]/layer_2/attention (numpy arrays differ)
+E0803 16:02:42.276348 17292 compare_predictions.py:14] Difference found at [61]/layer_3/attention (numpy arrays differ)
+E0803 16:02:42.287420 17292 compare_predictions.py:14] Difference found at [61]/layer_4/attention (numpy arrays differ)
+E0803 16:02:42.381873 17292 compare_predictions.py:14] Difference found at [61]/layer_5/attention (numpy arrays differ)
+E0803 16:02:42.392924 17292 compare_predictions.py:14] Difference found at [61]/layer_6/attention (numpy arrays differ)
+E0803 16:02:42.405027 17292 compare_predictions.py:14] Difference found at [61]/layer_7/attention (numpy arrays differ)
+E0803 16:02:42.417007 17292 compare_predictions.py:14] Difference found at [61]/layer_8/attention (numpy arrays differ)
+E0803 16:02:42.426347 17292 compare_predictions.py:14] Difference found at [61]/layer_9/attention (numpy arrays differ)
+E0803 16:02:42.435301 17292 compare_predictions.py:14] Difference found at [61]/layer_10/attention (numpy arrays differ)
+E0803 16:02:42.443533 17292 compare_predictions.py:14] Difference found at [61]/layer_11/attention (numpy arrays differ)
+E0803 16:02:42.455481 17292 compare_predictions.py:14] Difference found at [61]/layer_12/attention (numpy arrays differ)
+E0803 16:02:42.455481 17292 compare_predictions.py:14] Difference found at [61]/probas (numpy arrays differ)
+E0803 16:02:42.457479 17292 compare_predictions.py:14] Difference found at [61]/cls_grad (numpy arrays differ)
+E0803 16:02:42.461502 17292 compare_predictions.py:14] Difference found at [61]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:42.461502 17292 compare_predictions.py:14] Difference found at [62]/input_embs (numpy arrays differ)
+E0803 16:02:42.475508 17292 compare_predictions.py:14] Difference found at [62]/cls_grad (numpy arrays differ)
+E0803 16:02:42.476480 17292 compare_predictions.py:14] Difference found at [62]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:42.711927 17292 compare_predictions.py:14] Difference found at [68]/input_embs (numpy arrays differ)
+E0803 16:02:42.733929 17292 compare_predictions.py:14] Difference found at [68]/cls_grad (numpy arrays differ)
+E0803 16:02:42.736930 17292 compare_predictions.py:14] Difference found at [68]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:42.824927 17292 compare_predictions.py:14] Difference found at [74]/cls_emb (numpy arrays differ)
+E0803 16:02:42.824927 17292 compare_predictions.py:14] Difference found at [74]/input_embs (numpy arrays differ)
+E0803 16:02:42.824927 17292 compare_predictions.py:14] Difference found at [74]/layer_0/avg_emb (numpy arrays differ)
+E0803 16:02:42.824927 17292 compare_predictions.py:14] Difference found at [74]/layer_1/avg_emb (numpy arrays differ)
+E0803 16:02:42.824927 17292 compare_predictions.py:14] Difference found at [74]/layer_2/avg_emb (numpy arrays differ)
+E0803 16:02:42.824927 17292 compare_predictions.py:14] Difference found at [74]/layer_3/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_4/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_5/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_6/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_7/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_8/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_9/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_10/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_11/avg_emb (numpy arrays differ)
+E0803 16:02:42.825927 17292 compare_predictions.py:14] Difference found at [74]/layer_12/avg_emb (numpy arrays differ)
+E0803 16:02:42.834940 17292 compare_predictions.py:14] Difference found at [74]/layer_1/attention (numpy arrays differ)
+E0803 16:02:42.844928 17292 compare_predictions.py:14] Difference found at [74]/layer_2/attention (numpy arrays differ)
+E0803 16:02:42.856955 17292 compare_predictions.py:14] Difference found at [74]/layer_3/attention (numpy arrays differ)
+E0803 16:02:42.953207 17292 compare_predictions.py:14] Difference found at [74]/layer_4/attention (numpy arrays differ)
+E0803 16:02:43.043606 17292 compare_predictions.py:14] Difference found at [74]/layer_5/attention (numpy arrays differ)
+E0803 16:02:43.055579 17292 compare_predictions.py:14] Difference found at [74]/layer_6/attention (numpy arrays differ)
+E0803 16:02:43.064728 17292 compare_predictions.py:14] Difference found at [74]/layer_7/attention (numpy arrays differ)
+E0803 16:02:43.079807 17292 compare_predictions.py:14] Difference found at [74]/layer_8/attention (numpy arrays differ)
+E0803 16:02:43.095367 17292 compare_predictions.py:14] Difference found at [74]/layer_9/attention (numpy arrays differ)
+E0803 16:02:43.107420 17292 compare_predictions.py:14] Difference found at [74]/layer_10/attention (numpy arrays differ)
+E0803 16:02:43.119364 17292 compare_predictions.py:14] Difference found at [74]/layer_11/attention (numpy arrays differ)
+E0803 16:02:43.127361 17292 compare_predictions.py:14] Difference found at [74]/layer_12/attention (numpy arrays differ)
+E0803 16:02:43.127361 17292 compare_predictions.py:14] Difference found at [74]/probas (numpy arrays differ)
+E0803 16:02:43.131376 17292 compare_predictions.py:14] Difference found at [74]/cls_grad (numpy arrays differ)
+E0803 16:02:43.135373 17292 compare_predictions.py:14] Difference found at [74]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:43.135373 17292 compare_predictions.py:14] Difference found at [75]/input_embs (numpy arrays differ)
+E0803 16:02:43.500720 17292 compare_predictions.py:14] Difference found at [75]/cls_grad (numpy arrays differ)
+E0803 16:02:43.504780 17292 compare_predictions.py:14] Difference found at [75]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:43.505709 17292 compare_predictions.py:14] Difference found at [76]/input_embs (numpy arrays differ)
+E0803 16:02:43.539709 17292 compare_predictions.py:14] Difference found at [76]/cls_grad (numpy arrays differ)
+E0803 16:02:43.541709 17292 compare_predictions.py:14] Difference found at [76]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:43.541709 17292 compare_predictions.py:14] Difference found at [77]/input_embs (numpy arrays differ)
+E0803 16:02:43.572789 17292 compare_predictions.py:14] Difference found at [77]/cls_grad (numpy arrays differ)
+E0803 16:02:43.575712 17292 compare_predictions.py:14] Difference found at [77]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:43.575712 17292 compare_predictions.py:14] Difference found at [78]/input_embs (numpy arrays differ)
+E0803 16:02:43.731647 17292 compare_predictions.py:14] Difference found at [78]/cls_grad (numpy arrays differ)
+E0803 16:02:43.732693 17292 compare_predictions.py:14] Difference found at [78]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:43.733709 17292 compare_predictions.py:14] Difference found at [79]/input_embs (numpy arrays differ)
+E0803 16:02:43.744656 17292 compare_predictions.py:14] Difference found at [79]/cls_grad (numpy arrays differ)
+E0803 16:02:43.746710 17292 compare_predictions.py:14] Difference found at [79]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:46.180045 17292 compare_predictions.py:14] Difference found at [123]/input_embs (numpy arrays differ)
+E0803 16:02:46.205143 17292 compare_predictions.py:14] Difference found at [123]/cls_grad (numpy arrays differ)
+E0803 16:02:46.207090 17292 compare_predictions.py:14] Difference found at [123]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:46.246057 17292 compare_predictions.py:14] Difference found at [126]/input_embs (numpy arrays differ)
+E0803 16:02:46.267061 17292 compare_predictions.py:14] Difference found at [126]/cls_grad (numpy arrays differ)
+E0803 16:02:46.270117 17292 compare_predictions.py:14] Difference found at [126]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:46.281371 17292 compare_predictions.py:14] Difference found at [128]/input_embs (numpy arrays differ)
+E0803 16:02:46.540629 17292 compare_predictions.py:14] Difference found at [128]/cls_grad (numpy arrays differ)
+E0803 16:02:46.545805 17292 compare_predictions.py:14] Difference found at [128]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:46.674866 17292 compare_predictions.py:14] Difference found at [134]/input_embs (numpy arrays differ)
+E0803 16:02:46.693868 17292 compare_predictions.py:14] Difference found at [134]/cls_grad (numpy arrays differ)
+E0803 16:02:46.694877 17292 compare_predictions.py:14] Difference found at [134]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:46.813862 17292 compare_predictions.py:14] Difference found at [136]/input_embs (numpy arrays differ)
+E0803 16:02:46.831850 17292 compare_predictions.py:14] Difference found at [136]/probas (numpy arrays differ)
+E0803 16:02:46.835861 17292 compare_predictions.py:14] Difference found at [136]/cls_grad (numpy arrays differ)
+E0803 16:02:46.836836 17292 compare_predictions.py:14] Difference found at [136]/token_grad_prompt (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/cls_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/input_embs (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_0/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_1/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_2/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_3/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_4/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_5/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_6/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_7/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_8/avg_emb (numpy arrays differ)
+E0803 16:02:46.837873 17292 compare_predictions.py:14] Difference found at [137]/layer_9/avg_emb (numpy arrays differ)
+E0803 16:02:46.838834 17292 compare_predictions.py:14] Difference found at [137]/layer_10/avg_emb (numpy arrays differ)
+E0803 16:02:46.838834 17292 compare_predictions.py:14] Difference found at [137]/layer_11/avg_emb (numpy arrays differ)
+E0803 16:02:46.838834 17292 compare_predictions.py:14] Difference found at [137]/layer_12/avg_emb (numpy arrays differ)
+E0803 16:02:46.840866 17292 compare_predictions.py:14] Difference found at [137]/layer_1/attention (numpy arrays differ)
+E0803 16:02:46.844859 17292 compare_predictions.py:14] Difference found at [137]/layer_2/attention (numpy arrays differ)
+E0803 16:02:46.847790 17292 compare_predictions.py:14] Difference found at [137]/layer_3/attention (numpy arrays differ)
+E0803 16:02:46.851792 17292 compare_predictions.py:14] Difference found at [137]/layer_4/attention (numpy arrays differ)
+E0803 16:02:46.855839 17292 compare_predictions.py:14] Difference found at [137]/layer_5/attention (numpy arrays differ)
+E0803 16:02:46.858791 17292 compare_predictions.py:14] Difference found at [137]/layer_6/attention (numpy arrays differ)
+E0803 16:02:46.861859 17292 compare_predictions.py:14] Difference found at [137]/layer_7/attention (numpy arrays differ)
+E0803 16:02:46.864871 17292 compare_predictions.py:14] Difference found at [137]/layer_8/attention (numpy arrays differ)
+E0803 16:02:46.868792 17292 compare_predictions.py:14] Difference found at [137]/layer_9/attention (numpy arrays differ)
+E0803 16:02:46.871864 17292 compare_predictions.py:14] Difference found at [137]/layer_10/attention (numpy arrays differ)
+E0803 16:02:46.876100 17292 compare_predictions.py:14] Difference found at [137]/layer_11/attention (numpy arrays differ)
+E0803 16:02:46.879041 17292 compare_predictions.py:14] Difference found at [137]/layer_12/attention (numpy arrays differ)
+E0803 16:02:46.879041 17292 compare_predictions.py:14] Difference found at [137]/probas (numpy arrays differ)
+E0803 16:02:46.880150 17292 compare_predictions.py:14] Difference found at [137]/cls_grad (numpy arrays differ)
+E0803 16:02:46.883050 17292 compare_predictions.py:14] Difference found at [137]/token_grad_prompt (numpy arrays differ)
+I0803 16:03:05.972791 17292 tcav.py:359] Result:
+I0803 16:03:05.973778 17292 tcav.py:361] 0.61
+I0803 16:03:05.998929 17292 tcav.py:362] Random Mean:
+I0803 16:03:05.998929 17292 tcav.py:363] 0.542
+I0803 16:03:06.064930 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 16:03:06] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:29:53.795530 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:29:55.826036 17292 tcav.py:359] Result:
+I0803 17:29:55.826036 17292 tcav.py:361] 0.71
+I0803 17:29:55.826036 17292 tcav.py:362] Random Mean:
+I0803 17:29:55.826036 17292 tcav.py:363] 0.548
+I0803 17:29:56.018614 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:29:56] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:30:03.282685 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:30:05.209964 17292 tcav.py:359] Result:
+I0803 17:30:05.209964 17292 tcav.py:361] 0.74
+I0803 17:30:05.209964 17292 tcav.py:362] Random Mean:
+I0803 17:30:05.209964 17292 tcav.py:363] 0.49600000000000005
+I0803 17:30:05.411534 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:30:05] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:30:32.033652 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:30:33.958085 17292 tcav.py:359] Result:
+I0803 17:30:33.958085 17292 tcav.py:361] 0.63
+I0803 17:30:33.958085 17292 tcav.py:362] Random Mean:
+I0803 17:30:33.958085 17292 tcav.py:363] 0.5106666666666666
+I0803 17:30:34.154400 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:30:34] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:30:35.513311 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:30:37.821734 17292 tcav.py:359] Result:
+I0803 17:30:37.821734 17292 tcav.py:361] 0.78
+I0803 17:30:37.821734 17292 tcav.py:362] Random Mean:
+I0803 17:30:37.821734 17292 tcav.py:363] 0.5246666666666666
+I0803 17:30:38.070934 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:30:38] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:30:42.873606 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:30:45.136936 17292 tcav.py:359] Result:
+I0803 17:30:45.137938 17292 tcav.py:361] 0.66
+I0803 17:30:45.137938 17292 tcav.py:362] Random Mean:
+I0803 17:30:45.137938 17292 tcav.py:363] 0.42666666666666675
+I0803 17:30:45.576776 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:30:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:30:50.292235 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:30:52.779176 17292 tcav.py:359] Result:
+I0803 17:30:52.779176 17292 tcav.py:361] 0.68
+I0803 17:30:52.779176 17292 tcav.py:362] Random Mean:
+I0803 17:30:52.779176 17292 tcav.py:363] 0.5226666666666666
+I0803 17:30:52.978811 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:30:52] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:30:55.925216 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:30:58.638495 17292 tcav.py:359] Result:
+I0803 17:30:58.638495 17292 tcav.py:361] 0.72
+I0803 17:30:58.638495 17292 tcav.py:362] Random Mean:
+I0803 17:30:58.639487 17292 tcav.py:363] 0.49133333333333323
+I0803 17:30:58.825314 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:30:58] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:00.170602 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:03.887550 17292 tcav.py:359] Result:
+I0803 17:31:03.887550 17292 tcav.py:361] 0.75
+I0803 17:31:03.887550 17292 tcav.py:362] Random Mean:
+I0803 17:31:03.887550 17292 tcav.py:363] 0.49
+I0803 17:31:04.477121 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:16.420624 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:24.495850 17292 tcav.py:359] Result:
+I0803 17:31:24.495850 17292 tcav.py:361] 0.51
+I0803 17:31:24.495850 17292 tcav.py:362] Random Mean:
+I0803 17:31:24.496846 17292 tcav.py:363] 0.4846666666666666
+I0803 17:31:25.824901 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:25] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:27.989814 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:30.904665 17292 tcav.py:359] Result:
+I0803 17:31:30.904665 17292 tcav.py:361] 0.69
+I0803 17:31:30.904665 17292 tcav.py:362] Random Mean:
+I0803 17:31:30.904665 17292 tcav.py:363] 0.4706666666666666
+I0803 17:31:31.165742 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:31] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:32.482349 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:34.718351 17292 tcav.py:359] Result:
+I0803 17:31:34.718351 17292 tcav.py:361] 0.65
+I0803 17:31:34.718351 17292 tcav.py:362] Random Mean:
+I0803 17:31:34.718351 17292 tcav.py:363] 0.47133333333333327
+I0803 17:31:34.893865 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:34] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:41.330191 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:43.432430 17292 tcav.py:359] Result:
+I0803 17:31:43.433758 17292 tcav.py:361] 0.78
+I0803 17:31:43.433758 17292 tcav.py:362] Random Mean:
+I0803 17:31:43.433758 17292 tcav.py:363] 0.44266666666666665
+I0803 17:31:43.608917 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:43] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:44.808994 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:47.531145 17292 tcav.py:359] Result:
+I0803 17:31:47.531145 17292 tcav.py:361] 0.83
+I0803 17:31:47.531145 17292 tcav.py:362] Random Mean:
+I0803 17:31:47.531145 17292 tcav.py:363] 0.5166666666666667
+I0803 17:31:47.887238 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:47] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:49.057905 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:51.368304 17292 tcav.py:359] Result:
+I0803 17:31:51.369392 17292 tcav.py:361] 0.66
+I0803 17:31:51.369440 17292 tcav.py:362] Random Mean:
+I0803 17:31:51.369440 17292 tcav.py:363] 0.4886666666666667
+I0803 17:31:51.584061 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:51] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:52.881334 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:55.077177 17292 tcav.py:359] Result:
+I0803 17:31:55.078169 17292 tcav.py:361] 0.77
+I0803 17:31:55.078169 17292 tcav.py:362] Random Mean:
+I0803 17:31:55.078169 17292 tcav.py:363] 0.5640000000000001
+I0803 17:31:55.250023 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:55] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:31:56.256338 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:31:58.475483 17292 tcav.py:359] Result:
+I0803 17:31:58.475483 17292 tcav.py:361] 0.66
+I0803 17:31:58.475483 17292 tcav.py:362] Random Mean:
+I0803 17:31:58.476446 17292 tcav.py:363] 0.4720000000000001
+I0803 17:31:58.739161 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:31:58] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:32:00.033576 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:32:02.528189 17292 tcav.py:359] Result:
+I0803 17:32:02.528189 17292 tcav.py:361] 0.77
+I0803 17:32:02.528189 17292 tcav.py:362] Random Mean:
+I0803 17:32:02.528189 17292 tcav.py:363] 0.5266666666666667
+I0803 17:32:02.832382 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:32:02] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:32:03.970729 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:32:06.233209 17292 tcav.py:359] Result:
+I0803 17:32:06.233209 17292 tcav.py:361] 0.5
+I0803 17:32:06.233209 17292 tcav.py:362] Random Mean:
+I0803 17:32:06.234210 17292 tcav.py:363] 0.59
+I0803 17:32:06.397812 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:32:06] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:32:07.336640 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:32:09.539859 17292 tcav.py:359] Result:
+I0803 17:32:09.539859 17292 tcav.py:361] 0.62
+I0803 17:32:09.539859 17292 tcav.py:362] Random Mean:
+I0803 17:32:09.539859 17292 tcav.py:363] 0.506
+I0803 17:32:09.764046 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:32:09] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:32:11.009817 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:32:13.459329 17292 tcav.py:359] Result:
+I0803 17:32:13.459329 17292 tcav.py:361] 0.71
+I0803 17:32:13.459329 17292 tcav.py:362] Random Mean:
+I0803 17:32:13.459329 17292 tcav.py:363] 0.5173333333333334
+I0803 17:32:13.840499 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:32:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:33:16.536943 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:33:19.784367 17292 tcav.py:359] Result:
+I0803 17:33:19.785368 17292 tcav.py:361] 0.67
+I0803 17:33:19.785368 17292 tcav.py:362] Random Mean:
+I0803 17:33:19.785368 17292 tcav.py:363] 0.53
+I0803 17:33:20.135094 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:33:20] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:33:26.393363 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:33:28.834609 17292 tcav.py:359] Result:
+I0803 17:33:28.834609 17292 tcav.py:361] 0.68
+I0803 17:33:28.834609 17292 tcav.py:362] Random Mean:
+I0803 17:33:28.834609 17292 tcav.py:363] 0.4753333333333334
+I0803 17:33:29.054554 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:33:29] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:33:37.034995 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:33:39.472757 17292 tcav.py:359] Result:
+I0803 17:33:39.472757 17292 tcav.py:361] 0.73
+I0803 17:33:39.472757 17292 tcav.py:362] Random Mean:
+I0803 17:33:39.472757 17292 tcav.py:363] 0.5459999999999999
+I0803 17:33:39.705869 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:33:39] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:33:46.360127 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:33:48.891072 17292 tcav.py:359] Result:
+I0803 17:33:48.891072 17292 tcav.py:361] 0.62
+I0803 17:33:48.891072 17292 tcav.py:362] Random Mean:
+I0803 17:33:48.891072 17292 tcav.py:363] 0.4433333333333334
+I0803 17:33:49.111597 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:33:49] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:34:00.826090 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:34:03.240416 17292 tcav.py:359] Result:
+I0803 17:34:03.240456 17292 tcav.py:361] 0.78
+I0803 17:34:03.240456 17292 tcav.py:362] Random Mean:
+I0803 17:34:03.240456 17292 tcav.py:363] 0.514
+I0803 17:34:03.432303 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:34:03] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:34:11.073924 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:34:13.464916 17292 tcav.py:359] Result:
+I0803 17:34:13.465926 17292 tcav.py:361] 0.71
+I0803 17:34:13.465926 17292 tcav.py:362] Random Mean:
+I0803 17:34:13.465926 17292 tcav.py:363] 0.46666666666666673
+I0803 17:34:13.804422 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:34:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:34:23.114120 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:34:25.435246 17292 tcav.py:359] Result:
+I0803 17:34:25.435246 17292 tcav.py:361] 0.69
+I0803 17:34:25.436294 17292 tcav.py:362] Random Mean:
+I0803 17:34:25.436294 17292 tcav.py:363] 0.4693333333333334
+I0803 17:34:25.615458 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:34:25] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:34:27.713355 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:34:29.923758 17292 tcav.py:359] Result:
+I0803 17:34:29.923758 17292 tcav.py:361] 0.77
+I0803 17:34:29.923758 17292 tcav.py:362] Random Mean:
+I0803 17:34:29.923758 17292 tcav.py:363] 0.45399999999999996
+I0803 17:34:30.082377 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:34:30] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:34:32.785843 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:34:35.029456 17292 tcav.py:359] Result:
+I0803 17:34:35.029456 17292 tcav.py:361] 0.52
+I0803 17:34:35.029456 17292 tcav.py:362] Random Mean:
+I0803 17:34:35.029456 17292 tcav.py:363] 0.48066666666666674
+I0803 17:34:35.149718 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:34:35] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:35:13.905205 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:35:16.973912 17292 tcav.py:359] Result:
+I0803 17:35:16.974908 17292 tcav.py:361] 0.78
+I0803 17:35:16.974908 17292 tcav.py:362] Random Mean:
+I0803 17:35:16.974908 17292 tcav.py:363] 0.5473333333333333
+I0803 17:35:17.229405 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:35:17] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:35:30.088722 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:35:32.843937 17292 tcav.py:359] Result:
+I0803 17:35:32.843937 17292 tcav.py:361] 0.71
+I0803 17:35:32.843937 17292 tcav.py:362] Random Mean:
+I0803 17:35:32.843937 17292 tcav.py:363] 0.508
+I0803 17:35:33.126022 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:35:33] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:35:51.806655 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:35:54.640110 17292 tcav.py:359] Result:
+I0803 17:35:54.640110 17292 tcav.py:361] 0.72
+I0803 17:35:54.640110 17292 tcav.py:362] Random Mean:
+I0803 17:35:54.640110 17292 tcav.py:363] 0.5933333333333334
+I0803 17:35:54.861128 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:35:54] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:36:17.856975 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:36:20.061488 17292 tcav.py:359] Result:
+I0803 17:36:20.061488 17292 tcav.py:361] 0.64
+I0803 17:36:20.061488 17292 tcav.py:362] Random Mean:
+I0803 17:36:20.061488 17292 tcav.py:363] 0.4306666666666667
+I0803 17:36:20.222443 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:36:20] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:36:37.883118 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:36:40.071375 17292 tcav.py:359] Result:
+I0803 17:36:40.071375 17292 tcav.py:361] 0.76
+I0803 17:36:40.071375 17292 tcav.py:362] Random Mean:
+I0803 17:36:40.071375 17292 tcav.py:363] 0.44
+I0803 17:36:40.224667 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:36:40] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:36:51.105335 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:36:53.226314 17292 tcav.py:359] Result:
+I0803 17:36:53.226314 17292 tcav.py:361] 0.72
+I0803 17:36:53.226314 17292 tcav.py:362] Random Mean:
+I0803 17:36:53.226314 17292 tcav.py:363] 0.5253333333333333
+I0803 17:36:53.425033 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:36:53] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:36:57.176084 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:36:59.360960 17292 tcav.py:359] Result:
+I0803 17:36:59.361957 17292 tcav.py:361] 0.65
+I0803 17:36:59.361957 17292 tcav.py:362] Random Mean:
+I0803 17:36:59.361957 17292 tcav.py:363] 0.4686666666666666
+I0803 17:36:59.519053 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:36:59] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:37:01.570797 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:37:03.907490 17292 tcav.py:359] Result:
+I0803 17:37:03.907490 17292 tcav.py:361] 0.6
+I0803 17:37:03.907490 17292 tcav.py:362] Random Mean:
+I0803 17:37:03.907490 17292 tcav.py:363] 0.5666666666666667
+I0803 17:37:04.087914 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:37:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:37:08.768988 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:37:11.130091 17292 tcav.py:359] Result:
+I0803 17:37:11.131090 17292 tcav.py:361] 0.77
+I0803 17:37:11.131090 17292 tcav.py:362] Random Mean:
+I0803 17:37:11.131090 17292 tcav.py:363] 0.48266666666666674
+I0803 17:37:11.314164 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:37:11] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:38:45.105655 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:38:47.893676 17292 tcav.py:359] Result:
+I0803 17:38:47.893676 17292 tcav.py:361] 0.61
+I0803 17:38:47.893676 17292 tcav.py:362] Random Mean:
+I0803 17:38:47.893676 17292 tcav.py:363] 0.4026666666666666
+I0803 17:38:48.079777 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:38:48] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:38:55.035619 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:38:57.373042 17292 tcav.py:359] Result:
+I0803 17:38:57.373042 17292 tcav.py:361] 0.62
+I0803 17:38:57.373042 17292 tcav.py:362] Random Mean:
+I0803 17:38:57.373042 17292 tcav.py:363] 0.5153333333333334
+I0803 17:38:57.557759 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:38:57] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:39:31.952255 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:39:35.040182 17292 tcav.py:359] Result:
+I0803 17:39:35.040182 17292 tcav.py:361] 0.56
+I0803 17:39:35.040182 17292 tcav.py:362] Random Mean:
+I0803 17:39:35.040182 17292 tcav.py:363] 0.4266666666666667
+I0803 17:39:35.327152 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:39:35] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:39:37.793799 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:39:40.106841 17292 tcav.py:359] Result:
+I0803 17:39:40.106860 17292 tcav.py:361] 0.68
+I0803 17:39:40.106860 17292 tcav.py:362] Random Mean:
+I0803 17:39:40.106860 17292 tcav.py:363] 0.4553333333333333
+I0803 17:39:40.283005 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:39:40] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:39:44.169482 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:39:46.393074 17292 tcav.py:359] Result:
+I0803 17:39:46.393074 17292 tcav.py:361] 0.5
+I0803 17:39:46.393074 17292 tcav.py:362] Random Mean:
+I0803 17:39:46.393074 17292 tcav.py:363] 0.5093333333333333
+I0803 17:39:46.591703 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:39:46] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:39:48.393207 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:39:50.722246 17292 tcav.py:359] Result:
+I0803 17:39:50.723253 17292 tcav.py:361] 0.85
+I0803 17:39:50.723253 17292 tcav.py:362] Random Mean:
+I0803 17:39:50.723253 17292 tcav.py:363] 0.5153333333333332
+I0803 17:39:50.923804 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:39:50] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:39:52.457671 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:39:54.629865 17292 tcav.py:359] Result:
+I0803 17:39:54.630863 17292 tcav.py:361] 0.84
+I0803 17:39:54.630863 17292 tcav.py:362] Random Mean:
+I0803 17:39:54.630863 17292 tcav.py:363] 0.5566666666666668
+I0803 17:39:54.789481 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:39:54] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:39:58.361281 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:40:00.613980 17292 tcav.py:359] Result:
+I0803 17:40:00.613980 17292 tcav.py:361] 0.76
+I0803 17:40:00.613980 17292 tcav.py:362] Random Mean:
+I0803 17:40:00.613980 17292 tcav.py:363] 0.5346666666666667
+I0803 17:40:00.808003 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:40:00] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:40:02.449068 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:40:04.825026 17292 tcav.py:359] Result:
+I0803 17:40:04.825026 17292 tcav.py:361] 0.69
+I0803 17:40:04.825026 17292 tcav.py:362] Random Mean:
+I0803 17:40:04.825026 17292 tcav.py:363] 0.5153333333333333
+I0803 17:40:05.056498 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:40:05] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:40:08.170447 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:40:10.843895 17292 tcav.py:359] Result:
+I0803 17:40:10.843895 17292 tcav.py:361] 0.55
+I0803 17:40:10.843895 17292 tcav.py:362] Random Mean:
+I0803 17:40:10.843895 17292 tcav.py:363] 0.5386666666666666
+I0803 17:40:11.098017 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:40:11] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0803 17:40:14.725266 17292 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0803 17:40:17.074858 17292 tcav.py:359] Result:
+I0803 17:40:17.074858 17292 tcav.py:361] 0.75
+I0803 17:40:17.074858 17292 tcav.py:362] Random Mean:
+I0803 17:40:17.074858 17292 tcav.py:363] 0.5033333333333334
+I0803 17:40:17.296151 17292 _internal.py:187] 127.0.0.1 - - [03/Aug/2024 17:40:17] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -

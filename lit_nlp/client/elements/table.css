@@ -1,0 +1,296 @@
+:host {
+  --table-header-height: 24px;
+  --table-footer-height: 20px;
+  --table-cell-padding: 2px 8px;
+  --header-text-max-width: none;
+}
+
+.holder {
+  height: 100%;
+  padding: 0px 1px; /* avoid spurious horizontal scrollbar */
+}
+
+.holder table {
+  width: 100%;
+  min-width: 100%;
+  border-spacing: 0;
+  color: var(--lit-gray-800);
+  position: relative;
+  z-index: 0;
+}
+
+.holder table.has-footer {
+  height: 100%;
+  min-height: 100%;
+}
+
+/**
+ * Header styles
+ */
+.holder table > thead {
+  position: sticky;
+  top: 0;
+  height: var(--table-header-height);
+  z-index: 1;
+  background: #f5fcfc;
+}
+
+.holder table > thead > th {
+  font-weight: 500;
+  color: #04394b;
+  border-bottom: solid 1px #dadce0;
+  position: relative;
+}
+
+.column-header {
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.column-header.right-align {
+  justify-content: flex-end;
+}
+
+.header-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--table-cell-padding);
+}
+
+.header-holder lit-tooltip {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  flex: 1;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 100%;
+  direction: rtl;
+  max-width: calc(var(--header-text-max-width) - 16px);   /* 16px for arrows */
+  white-space: nowrap;
+}
+
+:host([searchenabled]) .header-text {
+  /* Adjust max-width down by 40px to account for search (24) + arrows (16). */
+  max-width: calc(var(--header-text-max-width) - 40px);
+}
+
+.column-header.right-align .header-text {
+  text-align: right;
+}
+
+.arrow-container {
+  width: 16px;
+  height: 20px;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+}
+
+.arrow {
+  display: none;
+  position: absolute;
+  --mdc-icon-size: 24px;
+  color: var(--lit-neutral-300);
+  left: -4px;
+}
+
+.arrow.up {
+  top: -6px;
+}
+
+.arrow.down {
+  top: 2px;
+}
+
+.arrow.active {
+  color: var(--lit-neutral-800);
+}
+
+.arrow.inactive {
+  color: var(--lit-neutral-300);
+}
+
+.menu-button-container {
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  padding-left: 4px;
+}
+
+.column-header:hover {
+  padding-right: 0;
+}
+
+.column-header:hover .arrow-container > .arrow,
+.column-header:hover .menu-button-container > .menu-button {
+  display: block;
+}
+
+.menu-button {
+  display: none;
+  --mdc-icon-size: 16px;
+  margin-top: 2px;
+  outline: 'none';
+}
+
+.menu-button:hover {
+  opacity: .7;
+}
+
+.togglable-menu-holder {
+  background-color: #eff6f8; /* light gray-blue */
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: rgb(218, 220, 224);
+  position: absolute;
+}
+
+.search-input {
+  width:100%;
+}
+
+/**
+ * Body styles
+ */
+tbody tr {
+  height: 20px;
+}
+
+tbody tr:hover {
+  background: var(--lit-mage-200);
+}
+
+:host([selectionenabled]) tbody tr:hover {
+  cursor: pointer;
+}
+
+tbody tr.filler:hover {
+  background: none;
+  cursor: default;
+}
+
+tbody tr.selected {
+  background: var(--lit-cyea-100);
+  color: var(--lit-gray-800);
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+tbody tr.primary-selected {
+  background: var(--lit-cyea-300);
+  color: black;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+tbody tr.focused {
+  background: var(--lit-mage-200);
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+tbody td {
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.n-rows {
+  margin-left: 20px;
+}
+
+.cell-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--table-cell-padding);
+}
+
+.cell-holder.right-align {
+  justify-content: flex-end;
+  padding-right: 24px;
+}
+
+:host([searchenabled]) .cell-holder.right-align {
+  padding-right: 46px;
+}
+
+.text-cell {
+  max-height: 150px;
+  overflow: auto;
+  white-space: pre-wrap;
+  display: inline;
+}
+
+/* TODO(lit-dev): Make the table image width configurable. */
+.table-img {
+  width: 100px;
+}
+
+
+/**
+ * Footer styles
+ */
+.holder table > tfoot {
+  position: sticky;
+  bottom: 0;
+  height: var(--table-footer-height);
+
+  background: #f5fcfc;
+}
+
+.footer {
+  color: #04394b;
+  font-weight: 400;
+  padding: 3px 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .pagination-controls-group {
+  position: sticky;
+  left: 4px;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon-button-fix-offset {
+  vertical-align: -3px;
+}
+
+.footer .export-controls-group {
+  position: sticky;
+  right: 4px;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-spacer {
+  flex: 1;
+}
+
+.current-page-num {
+  display: inline-block;
+  text-align: center;
+  min-width: 16px;
+}
+
+.checkbox-holder{
+  padding: 4px;
+}
+
+.right-aligned-search {
+  right: 20px;
+}

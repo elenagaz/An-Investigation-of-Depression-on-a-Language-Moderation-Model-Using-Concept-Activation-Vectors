@@ -1,0 +1,83 @@
+.description {
+  font-size: 11px;
+  color: rgb(60, 64, 67);
+}
+
+/* Reduce excess whitespace after markdown-formatted descriptions */
+.description > p:last-child {
+  margin-block-end: 0.25em;
+}
+
+.header {
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-family: 'Google Sans', sans;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header .title {
+  color: var(--lit-majtonal-nv-800);
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.content {
+  padding: 0 8px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.content.minimized {
+  max-height: 0;
+  border-bottom: none;
+}
+
+.control-name {
+  color: #80868B;
+  width: 50%;
+}
+
+.control-holder {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.control {
+  width: 50%;
+}
+
+.buttons-holder {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.checkbox-holder {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-control {
+  margin-right: 12px;
+  min-width: 48px;
+}
+
+.slider-holder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  width: 50%;
+}
+

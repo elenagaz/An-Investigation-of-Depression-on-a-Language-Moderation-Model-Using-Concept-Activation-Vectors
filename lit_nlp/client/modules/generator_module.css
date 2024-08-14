@@ -1,0 +1,65 @@
+.generator-module-content {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.generators-panel {
+  border-right: 1px solid var(--lit-neutral-300);
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow-y: auto;
+  width: 400px;
+}
+
+.results-holder {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: auto;
+  margin-left: 4px;
+}
+
+.generators-panel .label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.generators-panel.visible {
+  display: block;
+}
+
+.generator-control {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-label {
+  margin-right: 4px;
+  padding: 10px;
+}
+
+.input-box {
+  width: 95%;
+}
+
+.overall-controls {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.slice-name-input {
+  margin-left: 4px;
+  width: 250px;
+}
+
+.select-all {
+  color: #1a73e8;
+  text-decoration: underline;
+  cursor: pointer;
+}

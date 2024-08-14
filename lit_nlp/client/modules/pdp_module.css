@@ -1,0 +1,13 @@
+.pdp-background {
+  padding: 5px;
+}
+
+.charts-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chart-label {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,157 @@
+C:\Users\elena\miniconda3\envs\lit-nlp2\python.exe C:\Users\elena\PycharmProjects\lit_bachelor\lit_nlp\examples\my_model_moderation\moderation_demo.py 
+2024-08-07 00:52:44.009936: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-08-07 00:52:44.011069: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-08-07 00:52:49.938289: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-08-07 00:52:49.939224: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2024-08-07 00:52:49.940113: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2024-08-07 00:52:49.941867: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2024-08-07 00:52:49.942860: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2024-08-07 00:52:49.943775: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2024-08-07 00:52:49.944705: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2024-08-07 00:52:49.945636: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2024-08-07 00:52:49.946279: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0807 00:52:49.946466 11096 moderation_demo.py:73] Working directory: KoalaAI/Text-Moderation
+2024-08-07 00:52:51.237760: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFDebertaForSequenceClassification: ['deberta.embeddings.position_ids']
+- This IS expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFDebertaForSequenceClassification were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDebertaForSequenceClassification for predictions without further training.
+I0807 00:52:55.029816 11096 dev_server.py:90] 
+ (    (           
+ )\ ) )\ )  *   ) 
+(()/((()/(` )  /( 
+ /(_))/(_))( )(_))
+(_)) (_)) (_(_()) 
+| |  |_ _||_   _| 
+| |__ | |   | |   
+|____|___|  |_|   
+
+
+I0807 00:52:55.029816 11096 dev_server.py:91] Starting LIT server...
+W0807 00:52:55.029816 11096 model.py:114] Unable to infer init spec for model 'ModerationModel'. Unable to infer a type for parameter 'model_name' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0807 00:52:55.029816 11096 dataset.py:154] Unable to infer init spec for dataset 'ModerationDataset'. Unable to infer a type for parameter 'file_path' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0807 00:52:55.035120 11096 dataset.py:154] Unable to infer init spec for dataset 'NoneDataset'. Unable to infer a type for parameter 'models' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+I0807 00:52:55.036165 11096 rouge_scorer.py:83] Using default tokenizer.
+I0807 00:52:55.039167 11096 wsgi_serving.py:46] 
+
+Starting Server on port 8081
+You can navigate to http://127.0.0.1:8081
+
+
+I0807 00:52:55.048029 11096 _internal.py:187] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+I0807 00:52:55.048029 11096 _internal.py:187] Press CTRL+C to quit
+I0807 00:53:02.260298 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 00:53:02] "POST /get_info HTTP/1.1" 200 -
+I0807 00:53:02.367506 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 00:53:02] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0807 00:53:02.503509 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 00:53:02.505509 11096 caching.py:306] CachingModelWrapper 'moderation': 507 misses out of 507 inputs
+I0807 00:53:02.506508 11096 moderation.py:316] -------------------------> using predict here
+You're using a DebertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+I0807 00:54:43.262138 11096 moderation.py:316] -------------------------> using predict here
+I0807 00:54:54.213771 11096 moderation.py:316] -------------------------> using predict here
+I0807 00:55:06.518628 11096 moderation.py:316] -------------------------> using predict here
+I0807 00:55:15.423088 11096 moderation.py:316] -------------------------> using predict here
+I0807 00:57:11.970646 11096 moderation.py:316] -------------------------> using predict here
+I0807 00:57:41.968815 11096 moderation.py:316] -------------------------> using predict here
+I0807 00:58:24.413337 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:01:52.133198 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:02:12.931435 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:02:35.447078 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:02:56.939079 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:03:16.887300 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:03:25.531481 11096 caching.py:314] Received 507 predictions from model
+I0807 01:03:25.620265 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:03:25] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0807 01:03:25.669365 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 01:03:25.673367 11096 projection.py:183] Projection request: instance key: frozenset({('field_name', 'cls_emb'), ('model_name', 'moderation'), ('proj_kw', frozenset({('n_components', 3)})), ('use_input', False)})
+I0807 01:03:25.707547 11096 projection.py:163] Creating new projection instance on 507 points
+I0807 01:03:25.725631 11096 umap.py:38] UMAP input x_train: (507, 768)
+I0807 01:03:38.735686 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:03:38] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0807 01:03:38.743795 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 01:03:38.745795 11096 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 01:03:38.745795 11096 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 01:03:38.746796 11096 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 01:03:38.746796 11096 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 01:03:38.758798 11096 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 01:03:38.759798 11096 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 01:03:38.759798 11096 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 01:03:38.759798 11096 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 01:03:38.760796 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:03:38] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0807 01:07:43.585609 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+W0807 01:07:43.598712 11096 caching.py:288] Attmepting to retrieve 1 (of 507) predictions from the cache where the cache key is None - this can be from a missing or empty example id. These will call model.predict() on this and subsequent calls.
+I0807 01:07:43.599715 11096 caching.py:306] CachingModelWrapper 'moderation': 1 misses out of 507 inputs
+I0807 01:07:43.599715 11096 moderation.py:316] -------------------------> using predict here
+I0807 01:07:45.421172 11096 caching.py:314] Received 1 predictions from model
+I0807 01:07:45.422175 11096 compare_predictions.py:57] Comparing of data
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/cls_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/input_embs (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_0/avg_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_1/avg_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_2/avg_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_3/avg_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_4/avg_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_5/avg_emb (numpy arrays differ)
+E0807 01:07:45.536107 11096 compare_predictions.py:14] Difference found at [4]/layer_6/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_7/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_8/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_9/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_10/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_11/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_12/avg_emb (numpy arrays differ)
+E0807 01:07:45.537116 11096 compare_predictions.py:14] Difference found at [4]/layer_1/attention (numpy arrays differ)
+E0807 01:07:45.538111 11096 compare_predictions.py:14] Difference found at [4]/layer_2/attention (numpy arrays differ)
+E0807 01:07:45.539108 11096 compare_predictions.py:14] Difference found at [4]/layer_3/attention (numpy arrays differ)
+E0807 01:07:45.539108 11096 compare_predictions.py:14] Difference found at [4]/layer_4/attention (numpy arrays differ)
+E0807 01:07:45.541265 11096 compare_predictions.py:14] Difference found at [4]/layer_5/attention (numpy arrays differ)
+E0807 01:07:45.542368 11096 compare_predictions.py:14] Difference found at [4]/layer_6/attention (numpy arrays differ)
+E0807 01:07:45.543263 11096 compare_predictions.py:14] Difference found at [4]/layer_7/attention (numpy arrays differ)
+E0807 01:07:45.544265 11096 compare_predictions.py:14] Difference found at [4]/layer_8/attention (numpy arrays differ)
+E0807 01:07:45.545331 11096 compare_predictions.py:14] Difference found at [4]/layer_9/attention (numpy arrays differ)
+E0807 01:07:45.546351 11096 compare_predictions.py:14] Difference found at [4]/layer_10/attention (numpy arrays differ)
+E0807 01:07:45.547312 11096 compare_predictions.py:14] Difference found at [4]/layer_11/attention (numpy arrays differ)
+E0807 01:07:45.547312 11096 compare_predictions.py:14] Difference found at [4]/layer_12/attention (numpy arrays differ)
+E0807 01:07:45.547312 11096 compare_predictions.py:14] Difference found at [4]/probas (numpy arrays differ)
+E0807 01:07:45.548320 11096 compare_predictions.py:14] Difference found at [4]/cls_grad (numpy arrays differ)
+E0807 01:07:45.549340 11096 compare_predictions.py:14] Difference found at [4]/token_grad_prompt (numpy arrays differ)
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0807 01:07:49.808409 11096 tcav.py:359] Result:
+I0807 01:07:49.809416 11096 tcav.py:361] 0.7524752475247525
+I0807 01:07:49.809416 11096 tcav.py:362] Random Mean:
+I0807 01:07:49.809416 11096 tcav.py:363] 0.48448844884488446
+I0807 01:07:49.809416 11096 tcav.py:364] ----> p_value
+I0807 01:07:49.809416 11096 tcav.py:365] 0.0003445208586547541
+I0807 01:07:49.812411 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:07:49] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 01:07:56.951363 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 01:07:57.920243 11096 tcav.py:359] Result:
+I0807 01:07:57.920243 11096 tcav.py:361] 0.46
+I0807 01:07:57.920243 11096 tcav.py:362] Random Mean:
+I0807 01:07:57.920243 11096 tcav.py:363] 0.47533333333333333
+I0807 01:07:57.920243 11096 tcav.py:364] ----> p_value
+I0807 01:07:57.921224 11096 tcav.py:365] 0.029207334109758253
+I0807 01:07:58.028229 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:07:58] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 01:08:03.014859 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 01:08:04.667957 11096 tcav.py:359] Result:
+I0807 01:08:04.668962 11096 tcav.py:361] 0.6320754716981132
+I0807 01:08:04.668962 11096 tcav.py:362] Random Mean:
+I0807 01:08:04.668962 11096 tcav.py:363] 0.5081761006289308
+I0807 01:08:04.669986 11096 tcav.py:364] ----> p_value
+I0807 01:08:04.669986 11096 tcav.py:365] 0.06714211289768875
+I0807 01:08:04.809370 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:08:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 01:08:08.880082 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 01:08:09.833528 11096 tcav.py:359] Result:
+I0807 01:08:09.833528 11096 tcav.py:361] 0.47
+I0807 01:08:09.833528 11096 tcav.py:362] Random Mean:
+I0807 01:08:09.833528 11096 tcav.py:363] 0.5400000000000001
+I0807 01:08:09.833528 11096 tcav.py:364] ----> p_value
+I0807 01:08:09.833528 11096 tcav.py:365] 0.8907586264912424
+I0807 01:08:09.934891 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:08:09] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 01:08:14.632336 11096 app.py:205] 507 of 507 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 01:08:15.563858 11096 tcav.py:359] Result:
+I0807 01:08:15.563858 11096 tcav.py:361] 0.63
+I0807 01:08:15.563858 11096 tcav.py:362] Random Mean:
+I0807 01:08:15.563858 11096 tcav.py:363] 0.448
+I0807 01:08:15.563858 11096 tcav.py:364] ----> p_value
+I0807 01:08:15.563858 11096 tcav.py:365] 0.0016123612490311124
+I0807 01:08:15.666868 11096 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 01:08:15] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -

@@ -1,0 +1,954 @@
+C:\Users\elena\miniconda3\envs\lit-nlp2\python.exe C:\Users\elena\PycharmProjects\lit_bachelor\lit_nlp\examples\my_model_moderation\moderation_demo_3.py
+2024-07-29 18:26:03.169651: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-07-29 18:26:03.170047: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-07-29 18:26:09.035689: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-07-29 18:26:09.038251: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2024-07-29 18:26:09.039713: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2024-07-29 18:26:09.041526: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2024-07-29 18:26:09.046127: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2024-07-29 18:26:09.048684: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2024-07-29 18:26:09.052860: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2024-07-29 18:26:09.056423: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2024-07-29 18:26:09.056821: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0729 18:26:09.058008 11332 moderation_demo_3.py:51] Working directory: KoalaAI/Text-Moderation
+2024-07-29 18:26:10.391999: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFDebertaForSequenceClassification: ['deberta.embeddings.position_ids']
+- This IS expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFDebertaForSequenceClassification were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDebertaForSequenceClassification for predictions without further training.
+I0729 18:26:14.846379 11332 dev_server.py:90]
+ (    (
+ )\ ) )\ )  *   )
+(()/((()/(` )  /(
+ /(_))/(_))( )(_))
+(_)) (_)) (_(_())
+| |  |_ _||_   _|
+| |__ | |   | |
+|____|___|  |_|
+
+
+I0729 18:26:14.846379 11332 dev_server.py:91] Starting LIT server...
+W0729 18:26:14.847367 11332 model.py:114] Unable to infer init spec for model 'ModerationModel'. Unable to infer a type for parameter 'model_name' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0729 18:26:14.847367 11332 dataset.py:154] Unable to infer init spec for dataset 'ModerationDataset'. Unable to infer a type for parameter 'file_path' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0729 18:26:14.853482 11332 dataset.py:154] Unable to infer init spec for dataset 'NoneDataset'. Unable to infer a type for parameter 'models' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+I0729 18:26:14.854483 11332 rouge_scorer.py:83] Using default tokenizer.
+I0729 18:26:14.858483 11332 wsgi_serving.py:46]
+
+Starting Server on port 8080
+You can navigate to http://127.0.0.1:8080
+
+
+I0729 18:26:14.868485 11332 _internal.py:187] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+I0729 18:26:14.868485 11332 _internal.py:187] Press CTRL+C to quit
+I0729 18:29:03.872742 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:29:03] "GET / HTTP/1.1" 200 -
+I0729 18:29:03.935745 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:29:03] "GET /main.js HTTP/1.1" 200 -
+I0729 18:29:04.324741 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:29:04] "GET /static/favicon.png HTTP/1.1" 200 -
+I0729 18:29:04.735292 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:29:04] "POST /get_info HTTP/1.1" 200 -
+I0729 18:29:04.848295 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:29:04] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0729 18:29:04.876303 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:29:04] "GET /static/onboarding_1_welcome.gif HTTP/1.1" 200 -
+I0729 18:29:05.017318 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:29:05.018295 11332 caching.py:306] CachingModelWrapper 'moderation': 506 misses out of 506 inputs
+I0729 18:29:05.019296 11332 moderation.py:317] -------------------------> using predict here
+You're using a DebertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+I0729 18:32:20.425731 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:32:33.234160 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:32:46.411995 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:32:54.979632 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:34:38.907314 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:35:03.179562 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:36:13.538853 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:40:17.598392 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:40:42.002678 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:41:02.780434 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:41:24.741544 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:41:43.680021 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:41:50.988474 11332 caching.py:314] Received 506 predictions from model
+I0729 18:41:51.053476 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:41:51] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0729 18:41:51.078468 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:41:51.080466 11332 projection.py:183] Projection request: instance key: frozenset({('model_name', 'moderation'), ('use_input', False), ('proj_kw', frozenset({('n_components', 3)})), ('field_name', 'cls_emb')})
+I0729 18:41:51.112554 11332 projection.py:163] Creating new projection instance on 506 points
+I0729 18:41:51.134713 11332 umap.py:38] UMAP input x_train: (506, 768)
+I0729 18:42:04.719969 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:42:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0729 18:42:04.732971 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:42:04.734973 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 18:42:04.734973 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 18:42:04.735973 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 18:42:04.735973 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 18:42:04.747970 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 18:42:04.747970 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 18:42:04.748970 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 18:42:04.748970 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 18:42:04.749970 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:42:04] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 18:57:04.913981 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+W0729 18:57:04.969778 11332 caching.py:288] Attmepting to retrieve 3 (of 506) predictions from the cache where the cache key is None - this can be from a missing or empty example id. These will call model.predict() on this and subsequent calls.
+I0729 18:57:04.970777 11332 caching.py:306] CachingModelWrapper 'moderation': 3 misses out of 506 inputs
+I0729 18:57:04.974799 11332 moderation.py:317] -------------------------> using predict here
+I0729 18:57:31.937575 11332 caching.py:314] Received 3 predictions from model
+I0729 18:57:32.084157 11332 compare_predictions.py:57] Comparing of data
+E0729 18:57:32.394256 11332 compare_predictions.py:14] Difference found at [0]/probas (numpy arrays differ)
+E0729 18:57:32.451781 11332 compare_predictions.py:14] Difference found at [0]/cls_grad (numpy arrays differ)
+E0729 18:57:32.457780 11332 compare_predictions.py:14] Difference found at [0]/token_grad_prompt (numpy arrays differ)
+E0729 18:57:33.223531 11332 compare_predictions.py:14] Difference found at [1]/probas (numpy arrays differ)
+E0729 18:57:33.243536 11332 compare_predictions.py:14] Difference found at [1]/cls_grad (numpy arrays differ)
+E0729 18:57:33.324064 11332 compare_predictions.py:14] Difference found at [1]/token_grad_prompt (numpy arrays differ)
+E0729 18:57:33.782847 11332 compare_predictions.py:14] Difference found at [2]/probas (numpy arrays differ)
+E0729 18:57:33.791848 11332 compare_predictions.py:14] Difference found at [2]/cls_grad (numpy arrays differ)
+E0729 18:57:33.804368 11332 compare_predictions.py:14] Difference found at [2]/token_grad_prompt (numpy arrays differ)
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0729 18:58:52.078946 11332 tcav.py:359] Result:
+I0729 18:58:52.079948 11332 tcav.py:361] 0.49514563106796117
+I0729 18:58:52.083952 11332 tcav.py:362] Random Mean:
+I0729 18:58:52.084957 11332 tcav.py:363] 0.5016181229773462
+I0729 18:58:52.094948 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:58:52] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:58:57.206100 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:00.116237 11332 tcav.py:359] Result:
+I0729 18:59:00.116237 11332 tcav.py:361] 0.4563106796116505
+I0729 18:59:00.116237 11332 tcav.py:362] Random Mean:
+I0729 18:59:00.116237 11332 tcav.py:363] 0.549514563106796
+I0729 18:59:00.302248 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:00] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:01.909170 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:04.258847 11332 tcav.py:359] Result:
+I0729 18:59:04.259852 11332 tcav.py:361] 0.5533980582524272
+I0729 18:59:04.259852 11332 tcav.py:362] Random Mean:
+I0729 18:59:04.259852 11332 tcav.py:363] 0.517799352750809
+I0729 18:59:04.423518 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:05.950890 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:08.574134 11332 tcav.py:359] Result:
+I0729 18:59:08.575134 11332 tcav.py:361] 0.5533980582524272
+I0729 18:59:08.575212 11332 tcav.py:362] Random Mean:
+I0729 18:59:08.575212 11332 tcav.py:363] 0.48737864077669907
+I0729 18:59:08.713690 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:08] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:09.767306 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:12.349666 11332 tcav.py:359] Result:
+I0729 18:59:12.350664 11332 tcav.py:361] 0.8932038834951457
+I0729 18:59:12.350664 11332 tcav.py:362] Random Mean:
+I0729 18:59:12.350664 11332 tcav.py:363] 0.5391585760517799
+I0729 18:59:12.670352 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:12] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:14.921806 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0729 18:59:17.668354 11332 tcav.py:359] Result:
+I0729 18:59:17.668354 11332 tcav.py:361] 0.7766990291262136
+I0729 18:59:17.668354 11332 tcav.py:362] Random Mean:
+I0729 18:59:17.668354 11332 tcav.py:363] 0.5268608414239482
+I0729 18:59:17.820338 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:17] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:19.016512 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:21.834444 11332 tcav.py:359] Result:
+I0729 18:59:21.834444 11332 tcav.py:361] 0.6504854368932039
+I0729 18:59:21.834444 11332 tcav.py:362] Random Mean:
+I0729 18:59:21.834444 11332 tcav.py:363] 0.4524271844660195
+I0729 18:59:22.103223 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:22] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:24.402205 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:26.857931 11332 tcav.py:359] Result:
+I0729 18:59:26.858934 11332 tcav.py:361] 0.6310679611650486
+I0729 18:59:26.858934 11332 tcav.py:362] Random Mean:
+I0729 18:59:26.858934 11332 tcav.py:363] 0.5216828478964401
+I0729 18:59:27.003996 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:27] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:28.846332 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:31.354573 11332 tcav.py:359] Result:
+I0729 18:59:31.355572 11332 tcav.py:361] 0.6893203883495146
+I0729 18:59:31.355572 11332 tcav.py:362] Random Mean:
+I0729 18:59:31.355572 11332 tcav.py:363] 0.537864077669903
+I0729 18:59:31.575150 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:31] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:34.068771 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:37.549617 11332 tcav.py:359] Result:
+I0729 18:59:37.550591 11332 tcav.py:361] 0.6407766990291263
+I0729 18:59:37.550591 11332 tcav.py:362] Random Mean:
+I0729 18:59:37.550591 11332 tcav.py:363] 0.49126213592233015
+I0729 18:59:37.930255 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:37] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:39.803133 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:43.240725 11332 tcav.py:359] Result:
+I0729 18:59:43.240725 11332 tcav.py:361] 0.5242718446601942
+I0729 18:59:43.240725 11332 tcav.py:362] Random Mean:
+I0729 18:59:43.240725 11332 tcav.py:363] 0.537864077669903
+I0729 18:59:43.649517 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:43] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:48.047373 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:50.768268 11332 tcav.py:359] Result:
+I0729 18:59:50.768268 11332 tcav.py:361] 0.4174757281553398
+I0729 18:59:50.768268 11332 tcav.py:362] Random Mean:
+I0729 18:59:50.769268 11332 tcav.py:363] 0.4938511326860841
+I0729 18:59:50.992407 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:50] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:54.274365 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 18:59:56.450652 11332 tcav.py:359] Result:
+I0729 18:59:56.450652 11332 tcav.py:361] 0.7572815533980582
+I0729 18:59:56.451648 11332 tcav.py:362] Random Mean:
+I0729 18:59:56.451648 11332 tcav.py:363] 0.4511326860841425
+I0729 18:59:56.716021 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 18:59:56] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 18:59:57.742284 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:00:00.187555 11332 tcav.py:359] Result:
+I0729 19:00:00.187555 11332 tcav.py:361] 0.8446601941747572
+I0729 19:00:00.187555 11332 tcav.py:362] Random Mean:
+I0729 19:00:00.187555 11332 tcav.py:363] 0.5559870550161812
+I0729 19:00:00.364363 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:00:00] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:00:07.763993 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:00:19.363394 11332 tcav.py:359] Result:
+I0729 19:00:19.478056 11332 tcav.py:361] 0.7184466019417476
+I0729 19:00:19.496057 11332 tcav.py:362] Random Mean:
+I0729 19:00:19.497058 11332 tcav.py:363] 0.5074433656957928
+I0729 19:00:20.120117 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:00:20] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:00:34.882851 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:00:42.741439 11332 tcav.py:359] Result:
+I0729 19:00:42.741439 11332 tcav.py:361] 0.6796116504854369
+I0729 19:00:42.742542 11332 tcav.py:362] Random Mean:
+I0729 19:00:42.743551 11332 tcav.py:363] 0.5288025889967637
+I0729 19:00:42.865851 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:00:42] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:01:08.563304 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:01:20.054187 11332 tcav.py:359] Result:
+I0729 19:01:20.079208 11332 tcav.py:361] 0.8252427184466019
+I0729 19:01:20.081193 11332 tcav.py:362] Random Mean:
+I0729 19:01:20.081193 11332 tcav.py:363] 0.4925566343042071
+I0729 19:01:20.536511 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:01:20] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:04:38.281463 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:04:46.487638 11332 tcav.py:359] Result:
+I0729 19:04:46.488651 11332 tcav.py:361] 0.36893203883495146
+I0729 19:04:46.490647 11332 tcav.py:362] Random Mean:
+I0729 19:04:46.491643 11332 tcav.py:363] 0.5786407766990291
+I0729 19:04:46.880649 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:04:46] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:05:00.086402 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0729 19:05:02.136122 11332 tcav.py:359] Result:
+I0729 19:05:02.136122 11332 tcav.py:361] 0.4854368932038835
+I0729 19:05:02.136122 11332 tcav.py:362] Random Mean:
+I0729 19:05:02.136122 11332 tcav.py:363] 0.5967637540453073
+I0729 19:05:02.302848 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:02] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:05:04.926226 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0729 19:05:07.313606 11332 tcav.py:359] Result:
+I0729 19:05:07.316157 11332 tcav.py:361] 0.47572815533980584
+I0729 19:05:07.317188 11332 tcav.py:362] Random Mean:
+I0729 19:05:07.317188 11332 tcav.py:363] 0.5080906148867315
+I0729 19:05:07.613916 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:07] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:05:10.105201 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:05:12.718192 11332 tcav.py:359] Result:
+I0729 19:05:12.718192 11332 tcav.py:361] 0.6213592233009708
+I0729 19:05:12.718192 11332 tcav.py:362] Random Mean:
+I0729 19:05:12.719190 11332 tcav.py:363] 0.4368932038834951
+I0729 19:05:13.087428 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I0729 19:05:44.629169 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:44] "GET /?models=moderation&selection=076275bbf65f272792aec5ef5b298342,744cee24cc40c5189a9af9e72f08a513,83b260a726cb90f68c6d5a4a8ba2278d,24ce3b4808873118a37f2137c0cb7585,d84da2dd70f299d7cbe6027a858239b9,2c9db9d40ca50c6c341ad3c9890276d2&primary=2c9db9d40ca50c6c341ad3c9890276d2&dataset=moderation_dataset&hidden_modules=Explanations_Attention&expanded_module=TCAV_TCAV+Explorer&layout=default&lower_tab=TCAV HTTP/1.1" 200 -
+I0729 19:05:48.018073 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:48] "POST /get_info HTTP/1.1" 200 -
+I0729 19:05:48.288339 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:48] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0729 19:05:48.507484 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:05:48.663483 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:48] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0729 19:05:48.676480 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:05:48.682492 11332 projection.py:183] Projection request: instance key: frozenset({('model_name', 'moderation'), ('use_input', False), ('proj_kw', frozenset({('n_components', 3)})), ('field_name', 'cls_emb')})
+I0729 19:05:48.731610 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:48] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0729 19:05:48.752625 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:05:48.761611 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.763617 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.765609 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.765609 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.801609 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.801609 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.802611 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.802611 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.804611 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:48] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:05:48.816615 11332 app.py:205] 6 of 6 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:05:48.817609 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.817609 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.817609 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.817609 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.820617 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.820617 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.821610 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:05:48.821610 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:05:48.822607 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:05:48] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:06:02.642253 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:06:05.824381 11332 tcav.py:359] Result:
+I0729 19:06:05.824381 11332 tcav.py:361] 0.56
+I0729 19:06:05.824381 11332 tcav.py:362] Random Mean:
+I0729 19:06:05.824381 11332 tcav.py:363] 0.51
+I0729 19:06:05.939852 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:06:05] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:06:47.258308 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:06:50.308394 11332 tcav.py:359] Result:
+I0729 19:06:50.308394 11332 tcav.py:361] 0.73
+I0729 19:06:50.308394 11332 tcav.py:362] Random Mean:
+I0729 19:06:50.308394 11332 tcav.py:363] 0.5026666666666667
+I0729 19:06:50.638426 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:06:50] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:06:57.005004 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:06:59.333492 11332 tcav.py:359] Result:
+I0729 19:06:59.334493 11332 tcav.py:361] 0.79
+I0729 19:06:59.334493 11332 tcav.py:362] Random Mean:
+I0729 19:06:59.334493 11332 tcav.py:363] 0.49
+I0729 19:06:59.504741 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:06:59] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:08:48.506465 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:08:49.734338 11332 tcav.py:359] Result:
+I0729 19:08:49.734338 11332 tcav.py:361] 0.74
+I0729 19:08:49.734338 11332 tcav.py:362] Random Mean:
+I0729 19:08:49.734338 11332 tcav.py:363] 0.4826666666666667
+I0729 19:08:49.822862 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:08:49] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:08:52.555683 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:08:53.603105 11332 tcav.py:359] Result:
+I0729 19:08:53.604098 11332 tcav.py:361] 0.66
+I0729 19:08:53.604098 11332 tcav.py:362] Random Mean:
+I0729 19:08:53.604098 11332 tcav.py:363] 0.4666666666666666
+I0729 19:08:53.697461 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:08:53] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:09:43.857231 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:09:44.990494 11332 tcav.py:359] Result:
+I0729 19:09:44.990494 11332 tcav.py:361] 0.63
+I0729 19:09:44.990494 11332 tcav.py:362] Random Mean:
+I0729 19:09:44.990494 11332 tcav.py:363] 0.5126666666666666
+I0729 19:09:45.090770 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:09:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:09:47.613352 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:09:48.605248 11332 tcav.py:359] Result:
+I0729 19:09:48.605248 11332 tcav.py:361] 0.62
+I0729 19:09:48.605248 11332 tcav.py:362] Random Mean:
+I0729 19:09:48.605248 11332 tcav.py:363] 0.49399999999999994
+I0729 19:09:48.718831 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:09:48] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:09:55.368722 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:09:56.549910 11332 tcav.py:359] Result:
+I0729 19:09:56.550906 11332 tcav.py:361] 0.47
+I0729 19:09:56.550906 11332 tcav.py:362] Random Mean:
+I0729 19:09:56.550906 11332 tcav.py:363] 0.5133333333333333
+I0729 19:09:56.699761 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:09:56] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:10:09.679812 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:10:10.720996 11332 tcav.py:359] Result:
+I0729 19:10:10.720996 11332 tcav.py:361] 0.59
+I0729 19:10:10.722000 11332 tcav.py:362] Random Mean:
+I0729 19:10:10.722000 11332 tcav.py:363] 0.5653333333333334
+I0729 19:10:10.813995 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:10:10] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:05.624185 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:07.029100 11332 tcav.py:359] Result:
+I0729 19:15:07.029100 11332 tcav.py:361] 0.81
+I0729 19:15:07.029100 11332 tcav.py:362] Random Mean:
+I0729 19:15:07.030121 11332 tcav.py:363] 0.5093333333333333
+I0729 19:15:07.164728 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:07] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:07.852939 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:09.108153 11332 tcav.py:359] Result:
+I0729 19:15:09.108153 11332 tcav.py:361] 0.73
+I0729 19:15:09.108153 11332 tcav.py:362] Random Mean:
+I0729 19:15:09.108153 11332 tcav.py:363] 0.5153333333333333
+I0729 19:15:09.204234 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:09] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:11.034082 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:12.149884 11332 tcav.py:359] Result:
+I0729 19:15:12.149884 11332 tcav.py:361] 0.53
+I0729 19:15:12.150884 11332 tcav.py:362] Random Mean:
+I0729 19:15:12.150884 11332 tcav.py:363] 0.4799999999999999
+I0729 19:15:12.270991 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:12] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:12.753990 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:13.819447 11332 tcav.py:359] Result:
+I0729 19:15:13.820451 11332 tcav.py:361] 0.57
+I0729 19:15:13.820451 11332 tcav.py:362] Random Mean:
+I0729 19:15:13.820451 11332 tcav.py:363] 0.5640000000000001
+I0729 19:15:13.935632 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:14.371175 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:15.555520 11332 tcav.py:359] Result:
+I0729 19:15:15.555520 11332 tcav.py:361] 0.7
+I0729 19:15:15.555520 11332 tcav.py:362] Random Mean:
+I0729 19:15:15.555520 11332 tcav.py:363] 0.456
+I0729 19:15:15.633270 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:15] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:16.302335 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0729 19:15:17.361784 11332 tcav.py:359] Result:
+I0729 19:15:17.362788 11332 tcav.py:361] 0.73
+I0729 19:15:17.362788 11332 tcav.py:362] Random Mean:
+I0729 19:15:17.362788 11332 tcav.py:363] 0.5133333333333334
+I0729 19:15:17.441032 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:17] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:17.933861 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:18.990073 11332 tcav.py:359] Result:
+I0729 19:15:18.990073 11332 tcav.py:361] 0.78
+I0729 19:15:18.990073 11332 tcav.py:362] Random Mean:
+I0729 19:15:18.990073 11332 tcav.py:363] 0.4873333333333333
+I0729 19:15:19.069072 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:19] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:20.101563 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:21.121020 11332 tcav.py:359] Result:
+I0729 19:15:21.121020 11332 tcav.py:361] 0.66
+I0729 19:15:21.121020 11332 tcav.py:362] Random Mean:
+I0729 19:15:21.121020 11332 tcav.py:363] 0.51
+I0729 19:15:21.234566 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:21] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:21.764685 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:22.919214 11332 tcav.py:359] Result:
+I0729 19:15:22.919214 11332 tcav.py:361] 0.66
+I0729 19:15:22.919214 11332 tcav.py:362] Random Mean:
+I0729 19:15:22.919214 11332 tcav.py:363] 0.5706666666666665
+I0729 19:15:22.998358 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:22] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:23.394140 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:24.401495 11332 tcav.py:359] Result:
+I0729 19:15:24.401495 11332 tcav.py:361] 0.56
+I0729 19:15:24.401495 11332 tcav.py:362] Random Mean:
+I0729 19:15:24.401495 11332 tcav.py:363] 0.4713333333333333
+I0729 19:15:24.482544 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:24] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:24.978579 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:26.026770 11332 tcav.py:359] Result:
+I0729 19:15:26.027753 11332 tcav.py:361] 0.51
+I0729 19:15:26.027753 11332 tcav.py:362] Random Mean:
+I0729 19:15:26.027753 11332 tcav.py:363] 0.5093333333333333
+I0729 19:15:26.150116 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:26] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:26.844752 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:27.994957 11332 tcav.py:359] Result:
+I0729 19:15:27.994957 11332 tcav.py:361] 0.54
+I0729 19:15:27.994957 11332 tcav.py:362] Random Mean:
+I0729 19:15:27.994957 11332 tcav.py:363] 0.52
+I0729 19:15:28.073043 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:28] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I0729 19:15:49.474934 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:49] "GET /?models=moderation&selection=076275bbf65f272792aec5ef5b298342,744cee24cc40c5189a9af9e72f08a513,83b260a726cb90f68c6d5a4a8ba2278d,24ce3b4808873118a37f2137c0cb7585,d84da2dd70f299d7cbe6027a858239b9,2c9db9d40ca50c6c341ad3c9890276d2&primary=2c9db9d40ca50c6c341ad3c9890276d2&dataset=moderation_dataset&hidden_modules=Explanations_Attention&expanded_module=TCAV_TCAV+Explorer&layout=default&lower_tab=TCAV HTTP/1.1" 200 -
+I0729 19:15:50.483905 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:50] "POST /get_info HTTP/1.1" 200 -
+I0729 19:15:50.636904 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:50] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0729 19:15:50.909914 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:50.968909 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:50] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:50.990904 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:50.992907 11332 projection.py:183] Projection request: instance key: frozenset({('model_name', 'moderation'), ('use_input', False), ('proj_kw', frozenset({('n_components', 3)})), ('field_name', 'cls_emb')})
+I0729 19:15:51.001903 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:51] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:51.021905 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:51.023906 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.023906 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.024903 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.024903 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.050906 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.051905 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.051905 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.052906 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.056906 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:51] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:15:51.087903 11332 app.py:205] 6 of 6 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:15:51.088907 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.089910 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.089910 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.090906 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.091907 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.091907 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.092906 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:15:51.092906 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:15:51.093906 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:15:51] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:26.475749 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:27.568834 11332 tcav.py:359] Result:
+I0729 19:16:27.568834 11332 tcav.py:361] 0.32038834951456313
+I0729 19:16:27.568834 11332 tcav.py:362] Random Mean:
+I0729 19:16:27.568834 11332 tcav.py:363] 0.540453074433657
+I0729 19:16:27.654851 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:27] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:38.996898 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:40.028747 11332 tcav.py:359] Result:
+I0729 19:16:40.031709 11332 tcav.py:361] 0.6893203883495146
+I0729 19:16:40.031709 11332 tcav.py:362] Random Mean:
+I0729 19:16:40.031709 11332 tcav.py:363] 0.519093851132686
+I0729 19:16:40.149573 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:40] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:40.919312 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:42.074363 11332 tcav.py:359] Result:
+I0729 19:16:42.075378 11332 tcav.py:361] 0.33980582524271846
+I0729 19:16:42.075378 11332 tcav.py:362] Random Mean:
+I0729 19:16:42.075378 11332 tcav.py:363] 0.5307443365695792
+I0729 19:16:42.166362 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:42] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:42.699716 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:43.703057 11332 tcav.py:359] Result:
+I0729 19:16:43.703057 11332 tcav.py:361] 0.6601941747572816
+I0729 19:16:43.703057 11332 tcav.py:362] Random Mean:
+I0729 19:16:43.703057 11332 tcav.py:363] 0.4796116504854368
+I0729 19:16:43.780645 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:43] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:44.762346 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:45.807158 11332 tcav.py:359] Result:
+I0729 19:16:45.808142 11332 tcav.py:361] 0.6893203883495146
+I0729 19:16:45.808142 11332 tcav.py:362] Random Mean:
+I0729 19:16:45.808142 11332 tcav.py:363] 0.5055016181229773
+I0729 19:16:45.887338 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:46.762998 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:47.805363 11332 tcav.py:359] Result:
+I0729 19:16:47.805363 11332 tcav.py:361] 0.6213592233009708
+I0729 19:16:47.805363 11332 tcav.py:362] Random Mean:
+I0729 19:16:47.805363 11332 tcav.py:363] 0.5941747572815534
+I0729 19:16:47.928025 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:47] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:48.677654 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:49.858037 11332 tcav.py:359] Result:
+I0729 19:16:49.859054 11332 tcav.py:361] 0.4563106796116505
+I0729 19:16:49.859054 11332 tcav.py:362] Random Mean:
+I0729 19:16:49.859054 11332 tcav.py:363] 0.5754045307443365
+I0729 19:16:49.937685 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:49] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:51.124886 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:52.164901 11332 tcav.py:359] Result:
+I0729 19:16:52.165956 11332 tcav.py:361] 0.33980582524271846
+I0729 19:16:52.165956 11332 tcav.py:362] Random Mean:
+I0729 19:16:52.165956 11332 tcav.py:363] 0.5320388349514562
+I0729 19:16:52.250205 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:52] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:16:53.226912 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:16:54.233126 11332 tcav.py:359] Result:
+I0729 19:16:54.233126 11332 tcav.py:361] 0.5728155339805825
+I0729 19:16:54.233126 11332 tcav.py:362] Random Mean:
+I0729 19:16:54.233126 11332 tcav.py:363] 0.487378640776699
+I0729 19:16:54.348752 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:16:54] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:01.664317 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:02.835415 11332 tcav.py:359] Result:
+I0729 19:17:02.835415 11332 tcav.py:361] 0.6699029126213593
+I0729 19:17:02.835415 11332 tcav.py:362] Random Mean:
+I0729 19:17:02.835415 11332 tcav.py:363] 0.49838187702265374
+I0729 19:17:02.924623 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:02] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:04.035239 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:05.069962 11332 tcav.py:359] Result:
+I0729 19:17:05.069962 11332 tcav.py:361] 0.4174757281553398
+I0729 19:17:05.069962 11332 tcav.py:362] Random Mean:
+I0729 19:17:05.069962 11332 tcav.py:363] 0.601294498381877
+I0729 19:17:05.149954 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:05] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:09.718163 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:10.731333 11332 tcav.py:359] Result:
+I0729 19:17:10.731333 11332 tcav.py:361] 0.46601941747572817
+I0729 19:17:10.731333 11332 tcav.py:362] Random Mean:
+I0729 19:17:10.731333 11332 tcav.py:363] 0.5656957928802588
+I0729 19:17:10.819663 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:10] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:22.471521 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:23.512104 11332 tcav.py:359] Result:
+I0729 19:17:23.512104 11332 tcav.py:361] 0.27184466019417475
+I0729 19:17:23.512104 11332 tcav.py:362] Random Mean:
+I0729 19:17:23.512104 11332 tcav.py:363] 0.46796116504854374
+I0729 19:17:23.590076 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:23] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:26.643390 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:27.637686 11332 tcav.py:359] Result:
+I0729 19:17:27.638671 11332 tcav.py:361] 0.7961165048543689
+I0729 19:17:27.638671 11332 tcav.py:362] Random Mean:
+I0729 19:17:27.638671 11332 tcav.py:363] 0.48543689320388345
+I0729 19:17:27.717627 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:27] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:29.077795 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:30.111662 11332 tcav.py:359] Result:
+I0729 19:17:30.111662 11332 tcav.py:361] 0.7184466019417476
+I0729 19:17:30.111662 11332 tcav.py:362] Random Mean:
+I0729 19:17:30.111662 11332 tcav.py:363] 0.46148867313915864
+I0729 19:17:30.201110 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:30] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:32.659866 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:33.654855 11332 tcav.py:359] Result:
+I0729 19:17:33.654855 11332 tcav.py:361] 0.6407766990291263
+I0729 19:17:33.654855 11332 tcav.py:362] Random Mean:
+I0729 19:17:33.654855 11332 tcav.py:363] 0.5313915857605178
+I0729 19:17:33.777995 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:33] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:36.675788 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:37.834490 11332 tcav.py:359] Result:
+I0729 19:17:37.835630 11332 tcav.py:361] 0.6116504854368932
+I0729 19:17:37.835630 11332 tcav.py:362] Random Mean:
+I0729 19:17:37.835630 11332 tcav.py:363] 0.5682847896440129
+I0729 19:17:37.914902 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:37] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:41.011963 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:42.044007 11332 tcav.py:359] Result:
+I0729 19:17:42.044007 11332 tcav.py:361] 0.36893203883495146
+I0729 19:17:42.045040 11332 tcav.py:362] Random Mean:
+I0729 19:17:42.045040 11332 tcav.py:363] 0.5190938511326861
+I0729 19:17:42.121605 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:42] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:44.810866 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:45.820851 11332 tcav.py:359] Result:
+I0729 19:17:45.820851 11332 tcav.py:361] 0.5242718446601942
+I0729 19:17:45.820851 11332 tcav.py:362] Random Mean:
+I0729 19:17:45.820851 11332 tcav.py:363] 0.5029126213592233
+I0729 19:17:45.939245 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:17:54.756539 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:17:55.973089 11332 tcav.py:359] Result:
+I0729 19:17:55.973089 11332 tcav.py:361] 0.9320388349514563
+I0729 19:17:55.973089 11332 tcav.py:362] Random Mean:
+I0729 19:17:55.973089 11332 tcav.py:363] 0.39611650485436894
+I0729 19:17:56.060701 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:17:56] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:18:03.258720 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:18:04.286331 11332 tcav.py:359] Result:
+I0729 19:18:04.286331 11332 tcav.py:361] 0.33980582524271846
+I0729 19:18:04.287338 11332 tcav.py:362] Random Mean:
+I0729 19:18:04.287338 11332 tcav.py:363] 0.5870550161812298
+I0729 19:18:04.365593 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:18:08.274967 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:18:09.289729 11332 tcav.py:359] Result:
+I0729 19:18:09.289729 11332 tcav.py:361] 0.3592233009708738
+I0729 19:18:09.289729 11332 tcav.py:362] Random Mean:
+I0729 19:18:09.289729 11332 tcav.py:363] 0.5210355987055016
+I0729 19:18:09.370281 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:09] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I0729 19:18:44.370091 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:44] "GET /?models=moderation&selection=076275bbf65f272792aec5ef5b298342,744cee24cc40c5189a9af9e72f08a513,83b260a726cb90f68c6d5a4a8ba2278d,24ce3b4808873118a37f2137c0cb7585,d84da2dd70f299d7cbe6027a858239b9,2c9db9d40ca50c6c341ad3c9890276d2&primary=2c9db9d40ca50c6c341ad3c9890276d2&dataset=moderation_dataset&hidden_modules=Explanations_Attention&expanded_module=TCAV_TCAV+Explorer&layout=default&lower_tab=TCAV HTTP/1.1" 200 -
+I0729 19:18:44.383136 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:44] "GET /?models=moderation&selection=076275bbf65f272792aec5ef5b298342,744cee24cc40c5189a9af9e72f08a513,83b260a726cb90f68c6d5a4a8ba2278d,24ce3b4808873118a37f2137c0cb7585,d84da2dd70f299d7cbe6027a858239b9,2c9db9d40ca50c6c341ad3c9890276d2&primary=2c9db9d40ca50c6c341ad3c9890276d2&dataset=moderation_dataset&hidden_modules=Explanations_Attention&expanded_module=TCAV_TCAV+Explorer&layout=default&lower_tab=TCAV HTTP/1.1" 200 -
+I0729 19:18:45.025636 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:45] "POST /get_info HTTP/1.1" 200 -
+I0729 19:18:45.149641 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:45] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0729 19:18:45.342636 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:18:45.381636 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0729 19:18:45.397637 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:18:45.399634 11332 projection.py:183] Projection request: instance key: frozenset({('model_name', 'moderation'), ('use_input', False), ('proj_kw', frozenset({('n_components', 3)})), ('field_name', 'cls_emb')})
+I0729 19:18:45.404634 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0729 19:18:45.412637 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:18:45.414637 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.414637 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.415665 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.415665 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.423633 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.423633 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.423633 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.423633 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.424660 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:45] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:18:45.434637 11332 app.py:205] 6 of 6 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:18:45.434637 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.434637 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.435638 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.435638 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.436638 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.436638 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.436638 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:18:45.436638 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:18:45.437635 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:18:45] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:18:59.660358 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:00.704094 11332 tcav.py:359] Result:
+I0729 19:19:00.705086 11332 tcav.py:361] 0.54
+I0729 19:19:00.705086 11332 tcav.py:362] Random Mean:
+I0729 19:19:00.705086 11332 tcav.py:363] 0.5020000000000001
+I0729 19:19:00.823097 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:00] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:22.747478 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:23.866178 11332 tcav.py:359] Result:
+I0729 19:19:23.866178 11332 tcav.py:361] 0.54
+I0729 19:19:23.866178 11332 tcav.py:362] Random Mean:
+I0729 19:19:23.866178 11332 tcav.py:363] 0.4920000000000001
+I0729 19:19:23.955661 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:23] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:26.115790 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:27.097826 11332 tcav.py:359] Result:
+I0729 19:19:27.097826 11332 tcav.py:361] 0.66
+I0729 19:19:27.097826 11332 tcav.py:362] Random Mean:
+I0729 19:19:27.097826 11332 tcav.py:363] 0.5539999999999999
+I0729 19:19:27.172993 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:27] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:29.478508 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:30.470197 11332 tcav.py:359] Result:
+I0729 19:19:30.470197 11332 tcav.py:361] 0.56
+I0729 19:19:30.470197 11332 tcav.py:362] Random Mean:
+I0729 19:19:30.470197 11332 tcav.py:363] 0.4446666666666667
+I0729 19:19:30.588909 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:30] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:40.826283 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:42.029220 11332 tcav.py:359] Result:
+I0729 19:19:42.030220 11332 tcav.py:361] 0.49
+I0729 19:19:42.030220 11332 tcav.py:362] Random Mean:
+I0729 19:19:42.030220 11332 tcav.py:363] 0.5213333333333333
+I0729 19:19:42.101789 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:42] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:50.999043 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:52.014166 11332 tcav.py:359] Result:
+I0729 19:19:52.014166 11332 tcav.py:361] 0.56
+I0729 19:19:52.014166 11332 tcav.py:362] Random Mean:
+I0729 19:19:52.015112 11332 tcav.py:363] 0.508
+I0729 19:19:52.101270 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:52] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:55.222324 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:56.239746 11332 tcav.py:359] Result:
+I0729 19:19:56.239746 11332 tcav.py:361] 0.55
+I0729 19:19:56.240721 11332 tcav.py:362] Random Mean:
+I0729 19:19:56.240721 11332 tcav.py:363] 0.5279999999999999
+I0729 19:19:56.354037 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:56] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:19:57.739094 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:19:58.878453 11332 tcav.py:359] Result:
+I0729 19:19:58.878453 11332 tcav.py:361] 0.53
+I0729 19:19:58.878453 11332 tcav.py:362] Random Mean:
+I0729 19:19:58.878453 11332 tcav.py:363] 0.4526666666666667
+I0729 19:19:58.958747 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:19:58] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:03.334896 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:04.337576 11332 tcav.py:359] Result:
+I0729 19:20:04.337576 11332 tcav.py:361] 0.45
+I0729 19:20:04.338578 11332 tcav.py:362] Random Mean:
+I0729 19:20:04.338578 11332 tcav.py:363] 0.4906666666666667
+I0729 19:20:04.416349 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:04] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:06.923329 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:07.921014 11332 tcav.py:359] Result:
+I0729 19:20:07.921014 11332 tcav.py:361] 0.59
+I0729 19:20:07.921014 11332 tcav.py:362] Random Mean:
+I0729 19:20:07.921014 11332 tcav.py:363] 0.49733333333333335
+I0729 19:20:07.999035 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:07] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:10.651374 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:11.787828 11332 tcav.py:359] Result:
+I0729 19:20:11.787828 11332 tcav.py:361] 0.58
+I0729 19:20:11.787828 11332 tcav.py:362] Random Mean:
+I0729 19:20:11.788828 11332 tcav.py:363] 0.4306666666666666
+I0729 19:20:11.922826 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:11] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:13.027085 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:14.236170 11332 tcav.py:359] Result:
+I0729 19:20:14.236170 11332 tcav.py:361] 0.54
+I0729 19:20:14.236170 11332 tcav.py:362] Random Mean:
+I0729 19:20:14.236170 11332 tcav.py:363] 0.5326666666666666
+I0729 19:20:14.321482 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:14] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:16.387249 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:17.420141 11332 tcav.py:359] Result:
+I0729 19:20:17.420141 11332 tcav.py:361] 0.61
+I0729 19:20:17.420141 11332 tcav.py:362] Random Mean:
+I0729 19:20:17.420141 11332 tcav.py:363] 0.4753333333333334
+I0729 19:20:17.499199 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:17] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:21.066216 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:22.054969 11332 tcav.py:359] Result:
+I0729 19:20:22.056989 11332 tcav.py:361] 0.58
+I0729 19:20:22.056989 11332 tcav.py:362] Random Mean:
+I0729 19:20:22.056989 11332 tcav.py:363] 0.5253333333333334
+I0729 19:20:22.176270 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:22] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:24.026960 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:25.137489 11332 tcav.py:359] Result:
+I0729 19:20:25.137489 11332 tcav.py:361] 0.28
+I0729 19:20:25.137489 11332 tcav.py:362] Random Mean:
+I0729 19:20:25.137489 11332 tcav.py:363] 0.46133333333333326
+I0729 19:20:25.217045 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:25] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:27.282133 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:28.287798 11332 tcav.py:359] Result:
+I0729 19:20:28.287798 11332 tcav.py:361] 0.75
+I0729 19:20:28.287798 11332 tcav.py:362] Random Mean:
+I0729 19:20:28.287798 11332 tcav.py:363] 0.5033333333333333
+I0729 19:20:28.366970 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:28] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:35.794111 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:36.798188 11332 tcav.py:359] Result:
+I0729 19:20:36.798188 11332 tcav.py:361] 0.55
+I0729 19:20:36.798188 11332 tcav.py:362] Random Mean:
+I0729 19:20:36.798188 11332 tcav.py:363] 0.4240000000000001
+I0729 19:20:36.874318 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:36] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:38.891303 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:39.931166 11332 tcav.py:359] Result:
+I0729 19:20:39.931166 11332 tcav.py:361] 0.58
+I0729 19:20:39.931166 11332 tcav.py:362] Random Mean:
+I0729 19:20:39.931166 11332 tcav.py:363] 0.506
+I0729 19:20:40.050387 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:40] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:43.810791 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:44.953908 11332 tcav.py:359] Result:
+I0729 19:20:44.954898 11332 tcav.py:361] 0.62
+I0729 19:20:44.954898 11332 tcav.py:362] Random Mean:
+I0729 19:20:44.954898 11332 tcav.py:363] 0.4786666666666667
+I0729 19:20:45.038761 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:46.009865 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:47.020433 11332 tcav.py:359] Result:
+I0729 19:20:47.020433 11332 tcav.py:361] 0.66
+I0729 19:20:47.020433 11332 tcav.py:362] Random Mean:
+I0729 19:20:47.020433 11332 tcav.py:363] 0.48400000000000004
+I0729 19:20:47.098036 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:47] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:20:47.843321 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:20:48.855051 11332 tcav.py:359] Result:
+I0729 19:20:48.855051 11332 tcav.py:361] 0.68
+I0729 19:20:48.855051 11332 tcav.py:362] Random Mean:
+I0729 19:20:48.855051 11332 tcav.py:363] 0.5273333333333332
+I0729 19:20:48.971599 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:20:48] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I0729 19:21:12.032553 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:12] "GET /?models=moderation&selection=076275bbf65f272792aec5ef5b298342,744cee24cc40c5189a9af9e72f08a513,83b260a726cb90f68c6d5a4a8ba2278d,24ce3b4808873118a37f2137c0cb7585,d84da2dd70f299d7cbe6027a858239b9,2c9db9d40ca50c6c341ad3c9890276d2&primary=2c9db9d40ca50c6c341ad3c9890276d2&dataset=moderation_dataset&hidden_modules=Explanations_Attention&expanded_module=TCAV_TCAV+Explorer&layout=default&lower_tab=TCAV HTTP/1.1" 200 -
+I0729 19:21:12.780179 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:12] "POST /get_info HTTP/1.1" 200 -
+I0729 19:21:12.912178 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:12] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0729 19:21:13.133184 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:13.184180 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:13.206182 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:13.208179 11332 projection.py:183] Projection request: instance key: frozenset({('model_name', 'moderation'), ('use_input', False), ('proj_kw', frozenset({('n_components', 3)})), ('field_name', 'cls_emb')})
+I0729 19:21:13.216176 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:13.226176 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:13.228193 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.228193 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.229178 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.229178 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.243184 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.244189 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.244189 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.245176 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.246177 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:13] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:13.253175 11332 app.py:205] 6 of 6 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:13.253175 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.253175 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.253175 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.254178 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.255196 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.255196 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.255196 11332 metrics.py:56] Skipping 'tokens': No parent provided.
+I0729 19:21:13.255196 11332 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0729 19:21:13.256178 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:13] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:32.426518 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:33.552525 11332 tcav.py:359] Result:
+I0729 19:21:33.552525 11332 tcav.py:361] 0.57
+I0729 19:21:33.552525 11332 tcav.py:362] Random Mean:
+I0729 19:21:33.552525 11332 tcav.py:363] 0.4846666666666667
+I0729 19:21:33.636652 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:33] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:37.779950 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:38.788484 11332 tcav.py:359] Result:
+I0729 19:21:38.788484 11332 tcav.py:361] 0.66
+I0729 19:21:38.788484 11332 tcav.py:362] Random Mean:
+I0729 19:21:38.788484 11332 tcav.py:363] 0.5126666666666667
+I0729 19:21:38.865417 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:38] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:40.397541 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:41.405975 11332 tcav.py:359] Result:
+I0729 19:21:41.405975 11332 tcav.py:361] 0.63
+I0729 19:21:41.405975 11332 tcav.py:362] Random Mean:
+I0729 19:21:41.405975 11332 tcav.py:363] 0.4006666666666667
+I0729 19:21:41.517981 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:41] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:44.294305 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:45.422053 11332 tcav.py:359] Result:
+I0729 19:21:45.422053 11332 tcav.py:361] 0.75
+I0729 19:21:45.422053 11332 tcav.py:362] Random Mean:
+I0729 19:21:45.422053 11332 tcav.py:363] 0.5120000000000001
+I0729 19:21:45.500200 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:45] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:46.779611 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:47.810464 11332 tcav.py:359] Result:
+I0729 19:21:47.810464 11332 tcav.py:361] 0.52
+I0729 19:21:47.810464 11332 tcav.py:362] Random Mean:
+I0729 19:21:47.810464 11332 tcav.py:363] 0.5359999999999999
+I0729 19:21:47.889492 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:47] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:50.588160 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:51.617281 11332 tcav.py:359] Result:
+I0729 19:21:51.617281 11332 tcav.py:361] 0.39
+I0729 19:21:51.617281 11332 tcav.py:362] Random Mean:
+I0729 19:21:51.617281 11332 tcav.py:363] 0.48066666666666663
+I0729 19:21:51.694373 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:51] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:52.835860 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:53.853735 11332 tcav.py:359] Result:
+I0729 19:21:53.853735 11332 tcav.py:361] 0.68
+I0729 19:21:53.853735 11332 tcav.py:362] Random Mean:
+I0729 19:21:53.853735 11332 tcav.py:363] 0.46866666666666673
+I0729 19:21:53.966984 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:53] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:21:57.722062 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:21:58.840368 11332 tcav.py:359] Result:
+I0729 19:21:58.840368 11332 tcav.py:361] 0.65
+I0729 19:21:58.841364 11332 tcav.py:362] Random Mean:
+I0729 19:21:58.841364 11332 tcav.py:363] 0.46466666666666673
+I0729 19:21:58.918653 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:21:58] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:01.500268 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:02.496951 11332 tcav.py:359] Result:
+I0729 19:22:02.497938 11332 tcav.py:361] 0.72
+I0729 19:22:02.497938 11332 tcav.py:362] Random Mean:
+I0729 19:22:02.497938 11332 tcav.py:363] 0.432
+I0729 19:22:02.579648 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:02] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:04.227455 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:05.222085 11332 tcav.py:359] Result:
+I0729 19:22:05.223100 11332 tcav.py:361] 0.58
+I0729 19:22:05.223100 11332 tcav.py:362] Random Mean:
+I0729 19:22:05.223100 11332 tcav.py:363] 0.4660000000000001
+I0729 19:22:05.340166 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:05] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:09.091044 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:10.249771 11332 tcav.py:359] Result:
+I0729 19:22:10.249771 11332 tcav.py:361] 0.51
+I0729 19:22:10.249771 11332 tcav.py:362] Random Mean:
+I0729 19:22:10.249771 11332 tcav.py:363] 0.4886666666666667
+I0729 19:22:10.327913 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:10] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:12.082965 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+I0729 19:22:13.170929 11332 tcav.py:359] Result:
+I0729 19:22:13.170929 11332 tcav.py:361] 0.69
+I0729 19:22:13.170929 11332 tcav.py:362] Random Mean:
+I0729 19:22:13.170929 11332 tcav.py:363] 0.5013333333333333
+I0729 19:22:13.243962 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:13] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:17.046268 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:18.050586 11332 tcav.py:359] Result:
+I0729 19:22:18.050586 11332 tcav.py:361] 0.57
+I0729 19:22:18.050586 11332 tcav.py:362] Random Mean:
+I0729 19:22:18.050586 11332 tcav.py:363] 0.5140000000000001
+I0729 19:22:18.127616 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:18] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:19.156012 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:20.170202 11332 tcav.py:359] Result:
+I0729 19:22:20.171249 11332 tcav.py:361] 0.6
+I0729 19:22:20.171249 11332 tcav.py:362] Random Mean:
+I0729 19:22:20.171249 11332 tcav.py:363] 0.4746666666666666
+I0729 19:22:20.249273 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:20] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:21.074686 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:22.115724 11332 tcav.py:359] Result:
+I0729 19:22:22.115724 11332 tcav.py:361] 0.57
+I0729 19:22:22.115724 11332 tcav.py:362] Random Mean:
+I0729 19:22:22.115724 11332 tcav.py:363] 0.5686666666666668
+I0729 19:22:22.189824 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:22] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:22.900430 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:23.922825 11332 tcav.py:359] Result:
+I0729 19:22:23.922825 11332 tcav.py:361] 0.63
+I0729 19:22:23.922825 11332 tcav.py:362] Random Mean:
+I0729 19:22:23.922825 11332 tcav.py:363] 0.504
+I0729 19:22:24.002831 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:24] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:24.513478 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:25.513527 11332 tcav.py:359] Result:
+I0729 19:22:25.514590 11332 tcav.py:361] 0.51
+I0729 19:22:25.514590 11332 tcav.py:362] Random Mean:
+I0729 19:22:25.514590 11332 tcav.py:363] 0.494
+I0729 19:22:25.631187 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:25] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:26.186260 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:27.384757 11332 tcav.py:359] Result:
+I0729 19:22:27.384757 11332 tcav.py:361] 0.72
+I0729 19:22:27.384757 11332 tcav.py:362] Random Mean:
+I0729 19:22:27.384757 11332 tcav.py:363] 0.4386666666666666
+I0729 19:22:27.461882 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:27] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:27.921895 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:28.970488 11332 tcav.py:359] Result:
+I0729 19:22:28.970488 11332 tcav.py:361] 0.69
+I0729 19:22:28.970488 11332 tcav.py:362] Random Mean:
+I0729 19:22:28.970488 11332 tcav.py:363] 0.5026666666666666
+I0729 19:22:29.047542 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:29] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:29.546066 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:30.591544 11332 tcav.py:359] Result:
+I0729 19:22:30.591544 11332 tcav.py:361] 0.45
+I0729 19:22:30.591544 11332 tcav.py:362] Random Mean:
+I0729 19:22:30.592560 11332 tcav.py:363] 0.4913333333333333
+I0729 19:22:30.707458 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:30] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0729 19:22:31.610251 11332 app.py:205] 506 of 506 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0729 19:22:32.809647 11332 tcav.py:359] Result:
+I0729 19:22:32.810649 11332 tcav.py:361] 0.59
+I0729 19:22:32.810649 11332 tcav.py:362] Random Mean:
+I0729 19:22:32.810649 11332 tcav.py:363] 0.518
+I0729 19:22:32.886188 11332 _internal.py:187] 127.0.0.1 - - [29/Jul/2024 19:22:32] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -

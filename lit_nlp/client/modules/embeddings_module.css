@@ -1,0 +1,38 @@
+#scatter-gl-container {
+  height: 100%;
+  user-select: none;
+}
+
+#scatter-gl-container>canvas {
+  outline: none;
+}
+
+.hidden-container {
+  display: none;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* *
+ * TODO(https://github.com/PAIR-code/scatter-gl/issues/113): Remove when fixed.
+ */
+.module-results-area {overflow: hidden}
+
+.module-footer > * { min-width: 0; }
+
+.selected-nearest-button {
+  text-wrap: nowrap;
+}
+
+.selected-nearest-button:disabled {
+  pointer-events: auto;
+}
+
+#select-button-container {
+  bottom: 4px;
+  right: 4px;
+}

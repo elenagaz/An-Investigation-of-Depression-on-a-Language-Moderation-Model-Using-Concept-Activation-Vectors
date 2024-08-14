@@ -1,0 +1,235 @@
+insomnia
+gen from 2 examples
+The only thing keeping me company is the ticking of the clock. It feels like every second is an eternity when you can't fall asleep. I just want to escape this cycle of insomnia and despair.
+gen from 1 example
+It's like my brain is on overdrive, replaying every mistake and every failure over and over again. I'm so exhausted, but I can't seem to switch off. It feels like I'm trapped in a constant cycle of worry and dread.
+I'm trapped in a waking nightmare. I'm so tired, both physically and emotionally, but sleep remains an elusive dream. I feel like a prisoner in my own mind, unable to escape the darkness that consumes me.
+This insomnia is like a physical manifestation of my depression. It's a constant reminder of my brokenness, of my inability to find peace. I feel like I'm slowly fading away, consumed by this darkness.
+gen from 2 examples (meds)
+My mind is a constant race track. Even with medication, I'm stuck on the hamster wheel, thoughts spinning and anxieties building. I feel physically drained but mentally wide awake, which is the worst kind of exhaustion.
+I'm a zombie during the day. The lack of sleep makes everything harder - work, relationships, even basic self-care. It feels like I'm constantly swimming upstream, fighting against the current of fatigue and despair.
+Sleep used to be my sanctuary, but now it's a battlefield. I'm constantly battling against my racing thoughts, the dread, and the overwhelming sense of hopelessness. It's a vicious cycle: the lack of sleep fuels the depression, and the depression makes it harder to sleep.
+The darkness outside mirrors the darkness within. I feel so alone in my struggle, like no one understands the torment of insomnia and its connection to my depression. It feels like I'm trapped in a never-ending night, with no hope of dawn.
+examples from datasets
+i've pretty much cut out 90% of my social interaction over the past 3-4 months cuz my depression got worse, i only have some small talk with my mom every few days, today she really wanted to talk because she was exhausted from attending my dad who had a high grade fever, reasonable, but i hadn't slept tonight because insomnia made a come back for whatever reason so i was feeling over the edge, then she stared talking, i told her i really cannot hold a convo with her at that moment, but she kept going, while lip smacking, i've been extremely sensitive with noises so this just made me really distressed so i screamed at her to just shut up, then she started crying, then i went to my room and punched the wall.. now she's just doing her own thing now, i feel so bad, what should i do?
+I think my mental health is just killing me slowly : All the time I've lost to this disease, the contribution it's made to awful sleep, insomnia, and bad health in general. I wonder how many days, or how much time it's stolen and continuing to steal from my life? Do I get to suffer for decades and then die early too, maybe when it's just starting to be light. I'm really not sure. It sucks having problems that damage your mind thrust into your life that are beyond your control. I was pretty normal, and I don't know I'll ever get close to it again. It's such a long and painful journey that no one sees, and no one understands.
+Anxiety to sleep before bedtime : So I have had problems with insomnia and depression for a while. I am sleeping decently for some periods of time, and other times I sleep horribly for multiple weeks. Now I am sleeping well, but I sometimes get anxious in the evening that tonight I will sleep bad, or just feel generally at unease. Do you feel this as well? How do you cope with this? Tonight I woke up several hours before I usually do, which is usually what happens during my long periods of insomnia, but during my insomnia period it is not caused by anxiety.
+I swear I live my whole life just struggling to find the motivation to do whatever comes next. I wake up every morning and decide I’d rather sleep another 2 minutes than brush my teeth. I decide it’s better to sleep a few more minutes than to pack a lunch that day. When I finally get to school I don’t wanna leave the parking lot. I struggle every day to make the decision to go to school when I just wanna stay in my car and listen to music. The whole day goes like that. I even find myself struggling to find the motivation to go to bed. As much as I want to sleep, I stay up all hours of the night delaying the inevitable beginning of tomorrow.
+
+hypersomnia
+gen from 2 examples
+Even small tasks feel like monumental efforts. I'm constantly battling against the overwhelming fatigue, trying to push myself to do even the simplest things. But it's an uphill battle, and I often find myself giving up before I even start.
+I'm so frustrated with myself. I want to be more productive, more engaged, but I just can't seem to overcome this relentless sleepiness. I feel like I'm failing myself, failing my dreams, and failing the people who care about me.
+This hypersomnia feels like a physical manifestation of my depression. It's a constant reminder of my powerlessness, my inability to control my own body and my own life.
+I'm afraid that I'll never be able to escape this sleepiness. It feels like a prison, trapping me in a state of perpetual lethargy and despair. I'm starting to lose hope that I'll ever feel like myself again.
+from the examples + the first 2 were used for examples in generation
+Sleeping my life away ### I fumble through my work week BARELY. Then I go to bed for 3 days. The only time I’m somewhat happy is when I’m asleep. I even prefer the nightmares to being awake. I’m on antidepressants and have tried them all or many of. I’m TIRED, so damned tired…
+Literally zero energy : I sleep like 12 hours a day, I have been on antidepressants for about 4 months, I have stopped going to college and miss shifts, help?
+I was diagnosed with severe depression a few months ago, is wanting to sleep all day part of it? ### Is this why my all time dream is to sleep as much as possible? In an ideal world I would be fed through a tube, and not leave my bed. Maybe faint classical music, but I wouldn’t really care to socialize much. Just be left alone.
+I’ve been struggling with depression for ages now. I’ve found that everyday when I wake up, I just wish that I hadn’t. I love sleeping. I love that I don’t really get any kind of thoughts when I sleep. I love that I can just fall into a dream where everything is fake and imaginary. I love to sleep to get away from reality. It’s gotten to a point where sleeping is my favourite activity of the entire day. It’s just such a shame that I have to wake up.
+I don’t know what’s wrong with me, but I’m finding a hard time looking forward to things in life. I just wanted to know if anyone else feels the same way? I’ll sleep for 12 hours or more if I can, just so I don’t have to experience the day.
+
+loss of interest in hobbies
+examples from dataset
+Ummm sleep. I haven’t had hobbies I actually enjoy in so long so I just lie and say what I did in high school. I’ll go out and try those things alone  as I have nobody to go with  and I always end up having a dreadful time. How do you find new hobbies in your depression?
+generated with examples
+I'm surrounded by things I used to love, but they hold no appeal anymore. My guitar sits in the corner collecting dust, my paints are untouched, and my books gather on the shelf. I feel like I'm losing myself, one forgotten hobby at a time.
+I'm afraid that I'll never be able to enjoy my hobbies again. It's like the spark has been extinguished, and I'm not sure if it will ever be rekindled. It's a terrifying thought.
+I'm trying to force myself to pick up my old hobbies, but it feels like a hollow imitation of my former self. I can't seem to find the same joy, the same passion, and it's deeply disheartening.
+I feel like a shell of my former self. I'm losing the things that used to define me, the things that made me feel alive. It's like I'm slowly fading away, losing myself in the fog of depression.
+generated without examples
+The thought of doing anything fun or engaging makes me feel like a lead weight is in my stomach. I used to be so full of energy and ideas, but now all I want to do is lie in bed and stare at the ceiling. It's like all the color has drained out of my life.
+I envy people who can still find joy in simple things. The idea of having a hobby, something that brings them pleasure and fulfillment, feels like a distant dream. It's like I'm watching everyone else live while I'm stuck in this stagnant pool of apathy.
+I'm afraid that I'll never be able to enjoy my hobbies again. It's like a part of me has died, and I'm not sure if it will ever come back to life. It's a terrifying thought.
+
+loss of interest in sex and physical intimacy
+generated from 2 examples
+I used to crave physical intimacy, but now it just feels like a chore. Even the idea of being touched makes me feel uncomfortable, like a violation. It's like the spark has been extinguished, and I don't know if it will ever be rekindled.
+I'm losing hope that I'll ever feel like myself again. The loss of interest in sex and physical touch feels like a permanent part of my depression. It's like I'm trapped in a body that doesn't belong to me.
+generated from 3 examples
+It feels like I've turned into a different person. I used to crave physical intimacy, but now even the thought of it makes me feel empty and detached. It's like my body is telling me it's not capable of enjoying something I used to love.
+I'm afraid I'm hurting my partner, even though I don't mean to. They're trying to be understanding, but I can feel the frustration building. I'm afraid of losing them, of losing everything because of my depression.
+It feels like a betrayal of my own self and my partner. I know that intimacy is important, and I want to be able to experience it, but it's just so difficult to feel anything.
+I'm worried it's making my partner feel undesirable or rejected. The thought of them thinking they are unloved because of my inability to connect physically adds to my sense of worthlessness.
+It makes me feel so distant, so separate from myself. It's like I'm watching a movie about someone else who has desire and passion, and I'm the spectator, unable to feel the warmth of those emotions.
+I worry that this will become a permanent fixture of my life. It's a deeply lonely experience to be emotionally distant and uninterested in intimacy, and it's hard to see a path forward.
+examples
+How do you guys deal with the sexual dysfunction that comes with depression? : It partially ruined my last relationship. Recently, I brought home an 8/10 from the bar a couple of months ago and didn't even care. I couldn't get aroused at all. Which it turn makes me feel worse. It sucks and I feel like no one talks about it.
+i miss her ### I miss the person she is when she isn't depressed. I miss being able to make her laugh. I miss the positive regard of my own self that comes from vibing so much with her and us having fun together and her liking me. She is so easily irritated with me these days, in ways I don't feel I deserve. I miss meeting her in that connected place that we go to during sex. I miss our sex. I feel so anxious because of how emotionally unresponsive she is. I feel hurt and angry and want to also shut down/pull away in protest, but realize that hurting her won't bring her back and then I just feel helpless. idk.
+
+hypersexuality
+It's like a vicious cycle. I use sex as a way to escape my depression, but it only makes me feel worse in the long run. The shame and guilt afterwards are overwhelming, and I feel even more empty and hopeless.
+I'm starting to feel hopeless. I don't know how to break free from this cycle of hypersexuality and depression. It feels like I'm trapped, and I don't know how to get out.
+I'm afraid of becoming dependent on sex. It's like I'm using it as a crutch, a way to cope with my depression. But I don't know how to stop, and I'm afraid of what that means for my future.
+It's like I'm trying to escape my reality. Sex provides a fleeting moment of pleasure, a distraction from the pain and emptiness I feel inside. But the high fades quickly, leaving me feeling even more empty and ashamed.
+I'm worried that my hypersexuality is pushing away the people I care about. They don't understand why I'm so obsessed with sex, and I feel like I'm losing them.
+It's like I'm living a double life. I'm trying to be a normal person, but my secret addiction is slowly taking over. I'm afraid that it will eventually consume me.
+
+loneliness
+examples from dataset
+Loneliness is terrible ### It feels like nobody wants me. All my friends live hours away and I rarely talk to them. If we do talk, it’s very superficial and fake feeling. I just want someone I can share things with, other than arbitrary, superficial, nonsense. Idk why I’m writing this. I’m just so lonely. It hurts so much! I don’t want people to feel bad for me, I just want someone to listen to me and care for me. I guess this is more of a journal entry than anything else.
+I live in a small town. Most of my friends have left or don't want to talk to me anymore. The only time I spend tome with people my age (20), I know they don't want me there. I always try to put on a happy face, but inside there is a well of nothingness. I want to go out and meet people. Just talk to someone in person for half an hour. But I don't know where I would go, or what to do when I meet them. I feel trapped and alone and I just want a way out.
+generated from 2 examples
+It's like I'm living in a silent movie. Everyone else is laughing, talking, and connecting, but I'm just watching from the sidelines, unable to participate. I feel like a ghost, invisible and unheard.
+I long for a hug, a simple act of affection, but it feels so far away. I'm surrounded by people who love me, but I can't seem to let them in. I'm afraid of being vulnerable, of showing my true self.
+The silence is deafening. I miss the sound of laughter, the feeling of being part of a conversation. I miss having someone to share my thoughts and feelings with, someone who understands.
+I'm afraid I'll never find someone who can truly understand me, someone who can accept me for who I am. I'm afraid of being alone for the rest of my life, of never feeling truly connected to another person.
+I'm so tired of feeling like a shadow. I want to be seen, to be heard, to be loved. But I don't know how to make that happen. It feels like I'm trapped in a cycle of loneliness and despair.
+
+sadness
+examples
+Why is it that when I reach a high in life my depression sneaks back into my life... I feel like I should have nothing to be depressed about yet my black dog still appears.
+generated - no examples
+I'm so tired of crying. My tears have run dry, but the sadness remains. It's a constant ache in my heart, a gnawing emptiness that I can't seem to fill.
+I'm afraid to let myself feel happy. It feels like a betrayal, like I'm disrespecting the sadness that consumes me. I'm so used to feeling down that even a flicker of joy feels out of place.
+I feel like I'm drowning in a sea of sorrow. Every wave of sadness pulls me further down, and I can't seem to find a way back to the surface. It's like I'm losing the ability to feel anything but this crushing despair.
+I'm starting to believe that I'll never be truly happy again. The sadness feels like an inevitable part of my existence, a permanent fixture in my world. I feel so lost, so alone.
+I hate that it feels like I'm burdening people around me. My sadness seems to cast a shadow on everyone else's joy, and it breaks my heart. It feels like everyone is walking on eggshells.
+It’s exhausting trying to pretend I’m not sad. I try to force a smile, make lighthearted jokes, but it’s so difficult. It feels like I’m trapped inside a dark cloud I can’t escape
+Sometimes it’s like my world turns grey, even colors seem dull. Everything feels hopeless. It’s hard to find the energy to care about anything, even things that used to bring me happiness.
+I feel so misunderstood. I'm not the "typical" sad person. It's not a single event or loss causing this. It's just this persistent, draining, always-present feeling. I just want it to go away, to feel happy again, but it seems so far away.
+
+emptiness
+examples
+I don’t know what to feel : A few minutes ago, I was on the verge of a break down and played some sad songs to just try and let it all out. All of a sudden, I can’t feel anything. I can’t cry...all I “feel” is confusion and anger and I don’t know what to do with this “feeling”. The music is not speaking to me...it legit feels like nothing can please me at the moment but I want to feel better but I can’t. I don’t know how to explain this. I think I’m tired. My body is done and just angry at life now? Ugh. Idk Why can’t this world end already! I’m tired of these “ups” and downs
+Nothing is fun. : Playing games, music, art, even eating is more habitual than because Im hungry. No matter what I do, I cant get enjoyment out of anything I used to. Is there anything I can possibly do to stop this?
+generated from 1 examples
+I'm so tired of trying to fill the void. I've tried everything – hobbies, relationships, travel – but nothing seems to work. The emptiness is always there, lurking beneath the surface, ready to swallow me whole.
+It's like I'm living in a black and white world. Colors have lost their vibrancy, and even the things I used to love no longer bring me joy. Everything feels empty, hollow, and meaningless.
+I feel like a ghost in my own life. I'm going through the motions, but I'm not truly present. I'm just a shell, a vacant vessel with no real sense of self or purpose.
+I feel like I'm slowly fading away, like I'm losing myself to the emptiness. I don't recognize the person I've become, and I'm afraid that I'll never get myself back.
+It's like my heart is made of stone. I can't feel anything, not love, not joy, not even sadness. Just this overwhelming sense of emptiness that consumes me entirely.
+
+trouble thinking - concentrating
+-removed here
+
+worthlessness
+examples
+I feel like this sometimes, my boyfriend is so cute and so sweet to me. I feel a little sad whenever he said something wholesome and genuine, it's like, I don't believe it because I feel like there's no way people would treat me like that. I'm a piece of shit. Does anyone feel like this?
+generated from 2 examples
+I'm afraid to ask for help. I don't deserve it. I'm not worthy of anyone's time or attention. I'm just a failure, a disappointment, a waste of space.
+I'm surrounded by people who love me, but I can't seem to believe them. Their words of affirmation feel hollow, like empty promises. I know they care, but I just can't seem to believe in my own worth.
+It's like I'm living in a constant state of self-loathing. I can't seem to escape the negative thoughts that plague me. I'm a failure, I'm ugly, I'm worthless. These words echo in my mind constantly, a relentless chorus of negativity.
+The thought of trying to improve myself feels pointless. I'm not worthy of change, of growth, of self-improvement. I'm just a broken, irredeemable mess.
+I'm afraid to hope for anything better. It feels like I'm setting myself up for disappointment. I'm destined to be a failure, a disappointment, a burden on the world. And I'm starting to accept it.
+
+anger, irritability
+examples
+I think I may have depression, but i’m not quite sure. Ever since September and starting a new year in school I’ve just gotten continually worse and worse. I don’t have the motivation for anything, I feel like nothing I do is good enough for anybody. The tiniest things can make me angry and snap at other people which is the worst because i’m taking it out on others. I’m tired all of the time, and I spend most of my days at school by myself. I want to go back to the person that I was in summer but it feels like I have so many things to worry about and I just cannot cope with them all even though it seems like other people can which is making it even worse. It’s not like I don’t want to get better because I do I just don’t know where to start.
+I wonder how it ends : I really want to not be me i guess. Im a ass hole , a loner, loser, bum, good for nothing,  n more i dont do shit it all either  bores me or i cant pay attention. I used to play games to distract my self but that doesn't help anymore just makes me sad whuch usually  turns to anger the back to me feeling really sad cause i got angry. I feel useless i have no friend any more the person i talk to the most left for the army idk how i feel i dont think  about it much i know im jumping around idk how to stay on track it all feels connected to me i guess idk im not expecting a response
+Everything feels like the worst. : Every time I voice concerns or sadness or pain I feel like an idiot. My partner told me to talk to them more about how I'm feeling and when I do it just pisses them off because of topics I talk about.  I am just so fed up with my life and I am so angry. I don't want to keep doing this
+i’m so filled with hate : i hate everything and everyone. i’m always so angry and irritable. just the sound of people living drives me insane. the smallest things make me lash out, i can’t control myself anymore. i hate myself, i hate my life and i hate everyone and everything in it. i’m tired, and i’m tired of feeling like this. i just want some peace.
+generated from 1 example
+I'm a ticking time bomb. The smallest things set me off, and I snap at everyone around me. I hate that I'm taking it out on the people I love, but I can't seem to control it. It's like the anger is bubbling up inside of me, and I'm just waiting to explode.
+I'm so irritable, I'm surprised anyone can stand to be around me. I snap at my partner, my friends, my family. I feel like a monster, a burden to everyone who knows me.
+
+anxiety
+examples
+Luckily I have a close group of friends and a great partner (who I live with). Unluckilly, my sad cripplingly anxious self is too afraid to talk to anyone outside of them. It gets lonely when they're all at work 9-5. Such is the life of a boarderline agorophobic. I wish I had more people I could talk to online. I put signs out in the world, but then I retreat back into my comfort zone and probably end up looking like an asshole for chickening out of socialising. I'm nearly 30 and can't help but feel really shitty about my anxiety. Am I worthy of friendship? I don't know anymore.
+generated from 2 examples
+My mind is a constant whirlwind of worry. What if I said the wrong thing? What if I didn't do enough? What if something bad happens? The questions never stop, and the anxiety just keeps building and building.
+I'm so tired of feeling this way. The anxiety is draining me, taking away my joy, my energy, my motivation. I just want to feel calm, to feel safe, to feel normal.
+My mind is a constant whirlwind of worry. What if I said the wrong thing? What if I didn't do enough? What if something bad happens? The questions never stop, and the anxiety just keeps building and building.
+I'm afraid to leave the house. Every social interaction feels like a potential minefield of anxiety. What if I say something stupid? What if people judge me? It's easier to just stay home and avoid the world altogether.
+output from 1 example
+Simple things trigger a wave of panic. A phone call, a text, even a loud noise can send me into a spiral. I hate how quickly it overtakes me, how easily my whole body feels threatened.
+This feeling of being overwhelmed is constantly chipping away at my motivation. I know I need to get better, but the anxiety feels so large, so insurmountable, that I just end up giving up.
+It's like living a half-life, stuck in a perpetual state of apprehension. I can't enjoy anything fully because the anxiety always lurks in the back of my mind. I feel trapped and afraid of what’s next.
+
+change in behavior
+examples
+From the symptoms I share, is it possible I’m depressed? : It all started a couple months ago. I started losing interest in things i loved, such as writing and singing. i started sleeping much worse and being constantly tired and not being able to sleep more than three hours a night or sleep without waking up two or more times. i don’t care about my clothing anymore or my looks. i don’t care if my hair looks awful or my clothes are stained. i barely take showers anymore because i don’t care what i look like. i don’t care about my grades in school anymore and i’m barely trying due to lack of motivation. i’m constantly irritable and get annoyed or angry very easily. small things can make me break down. could this be caused by depression?
+I’m a male in my late 20s, and my moods change sometime from hour to hour, day to day. I get very depressed, angry, and sometimes happy and impulsive. I feel like I’m losing my mind. It’s a challenge to stay productive and interact with other people. I try to stay fit, but I’m so moody and upset. I lash out at people all the time and I used to be a very nice and strong person. Sometimes I feel very effeminate. Not trying to be misogynistic, but I literally feel like crying several times a day over small things. I think people are being mean to me when they’re just making conversation. I used to be very masculine. What is happening? Any advice would be much appreciated.
+generated from 1 example
+I'm not sure what's happening to me. It's like a switch flipped, and suddenly I don't want to do anything. I've lost all motivation, all interest in the things that used to bring me joy. I just want to stay in bed and disappear.
+I feel like a stranger in my own body. My behavior is so different, so unlike my usual self. I'm constantly surprised by my own actions, my own words. It's like I'm watching myself from the outside, a stranger who doesn't recognize me.
+I feel like I'm losing control. My behavior is unpredictable, even to myself. I'm making choices that I would never normally make, doing things that I would never normally do. It's like I'm possessed by something dark and sinister.
+I'm starting to feel hopeless. If I can't control this change in behavior, what kind of life can I expect to have? Will I ever be able to connect with people again, to enjoy the things that once brought me happiness?
+
+hopelessness
+examples
+i've had depression for about 10 years now, i used to be creative, funny, and shy but somehow it was easy for me to make friends. fast forward to now, its been like 7 years since i made new friends and everytime i try people seem to lose interest really fast, i feel like all these years of depression and solitude made me a boring, insecure and anxious person and ruined any chance of making friends
+I've spiraled back to the bottom. I can't get myself back up. Time is passing me by in a blur. I need to push but i don't have anything left to give. What do I do. How can I find some willpower to push when I've got nothing left.
+I wanna drop out of school ### Hi. I missed 2 weeks of school already and next week is our exams and because of my depression I haven't been able to do any homeworks, projects, and other school things. I wanna drop out because I cannot do school rn but I still wanna finish everything. Sometimes I wanna kms because I felt like that would solve my problems with school. I love school and im a honor student but Im depressed and cant even brush my teeth. I just really need advices right now. Thank you
+generated from 2 examples
+I'm so tired of feeling like a burden. I'm draining the energy and the hope out of everyone around me. I hate that I'm causing them pain, but I can't seem to stop. It feels like I'm just a black hole, sucking in everything good in my life.
+The thought of the future fills me with dread. What's the point of planning, of hoping, of dreaming? I'm destined to fail, to be trapped in this cycle of hopelessness. I can't see a way out.
+I'm afraid to hope for a better future. It feels like I'm setting myself up for disappointment. I'm destined to be a failure, a disappointment, a burden on the world. And I'm starting to accept it.
+
+self-blame, guilt, overthinking
+examples
+I just don’t understand how people find fulfillment in life. I wake up and feel hopeless. Even the things I used to enjoy are now so unappealing. I can’t talk about it with anyone in my life, because they’re all so goal-oriented and driven. They have this hunger and passion for life that just doesn’t make sense to me.
+I fucked up so badly with school and at the age of 25 never applied to Uni. Im in debt and trying to pay for it doing temp jobs but I always end up quitting or getting fired. Live in complete chaos and used to use weed to escape but had to quit since its expensive hobby. All my relationships ended and I have burned all bridges with everyone in my life so Im completely alone, probably cognitively impaired from lack of social contacts. I dont want to vent on hear but I just wanted someone to know how im really doing.
+generated from 2 examples
+I replay every conversation in my head, dissecting every word, every inflection, looking for any sign that I messed up. I'm constantly analyzing my behavior, searching for flaws, for reasons why people don't like me. It's exhausting, and it's making me feel worse.
+I feel like a burden to everyone around me. I know they care, but I can't help but feel like I'm dragging them down with my negativity, my lack of motivation, my inability to contribute. I'm a drain on their energy, their time, their love.
+I'm so afraid of making mistakes. Even the smallest slip-up sends me spiraling into a vortex of self-doubt and guilt. I'm constantly berating myself, replaying every misstep in my mind. It's a never-ending cycle of self-criticism and despair.
+I feel like I'm constantly letting people down. My partner, my friends, my family – I feel like I'm disappointing them all. I'm not good enough, I'm not doing enough, I'm not enough.
+I'm so tired of overthinking everything. It's like I can't turn off my brain. Every conversation, every interaction, every decision is analyzed and dissected, leaving me feeling drained and exhausted.
+I'm trying to be kinder to myself, but it's so hard. The negative thoughts just keep coming back, like a bad habit I can't seem to break. I'm so used to beating myself up that it feels like I'm betraying myself when I try to be kind.
+I'm afraid of the future. What if this guilt and self-blame just get worse? What if I lose everything because of it? The thought of living a life consumed by negativity is terrifying, but it's one that I can't seem to shake.
+
+cognitive dysfunction
+examples
+I would give almost anything to be in their place and to have a brain that functions as it should. Sure I could be in a much worse situation. I have a roof over my head, food to eat and an income but every day is a struggle. It's scary to be inside my mind. I'm surrounded by people that don't have any kind of mental health problem and I am so envious. They don't realise how lucky they are.
+recently i gotten an evil eye bracelet. my brain is constantly paranoid, to add on to it i have near constant nightmares and sometimes i am fearful to sleep bc of them. i got the bracelet to calm my nerves a bit for people that might be “out to get me” but even then it doesnt stop me from being scared. at night i try to sleep and close my eyes but my mind throws in some creepy photo memory it made up and keeps me up longer. i get up and turn on my flashlight and scan my room for abt 5 seconds to make sure there are no “monsters” or anything to take me in my sleep. i dont wear my bracelet as i sleep in fear itll give me bad luck. i try to watch asmr “nightmare prevention.” i tried brown noise which did help for the night but my brain needs constant stimulation or else ill get bored or my mind will try to scare me again.
+I’m a student in uni and depression makes my life so hard and I get even more depressed by it. Grade is dropping because I literally can’t focus on anything and my memory is deteriorating. I have like very average gpa but can’t even get a summer internship or look into grad school I really wanna go because what I have is not enough. I know I can do better but I don’t know what I can do when I’m even having hard time taking my meds every day. I just feel so dead inside. I’m constantly telling me that I can do better and the fact that I know that is killing me.
+generated from 2 examples
+I feel like I'm living in a fog. Everything seems hazy and unclear. I'm constantly questioning myself, wondering if I'm making sense, if I'm even real. It's like I'm losing touch with reality.
+I'm so frustrated with myself. I know I'm capable of so much more, but my brain just isn't cooperating. It's like I'm trapped in my own body, unable to access the mind that I used to know.
+It's like I'm living in a constant state of brain fog. I can't think clearly, I can't make decisions, I can't even enjoy the things I used to love. It's a debilitating feeling, and it's making me feel hopeless.
+
+unexplained pain
+examples
+I’m so down and I don’t know why : I just want to cry and sleep all the time. I have headaches, extreme hatred towards my body/weight. I’m so down and because I don’t understand why there’s nothing I can do. I’m at work in the morning but I honestly don’t know how I’m going to get out of bed
+generated from 1 example
+I'm so tired of feeling like a broken machine. My body is constantly betraying me, sending me these confusing signals of pain and discomfort. I just want to feel normal again, to feel like I'm in control of my own body.
+My body feels like one big ache. It's not a specific pain, just a general sense of discomfort and tightness. It's like my muscles are always tense, my joints are always sore, and I can't seem to shake this feeling of being unwell.
+It's like my body is trying to tell me something, but I don't understand the language. The pain is so persistent, so pervasive, but there's no clear cause. It's a constant reminder that something is wrong, but I don't know what to do about it.
+It’s exhausting explaining to people why I’m hurting, especially when it’s hard to even pinpoint the reason myself. I feel dismissed a lot because it seems so “minor” – a headache, muscle soreness, but it makes my days a constant struggle.
+The constant ache, the pounding headaches, the agonizing migraines feel like a cruel trick. My depression has already taken so much away, and now it's like my body is trying to add more misery.
+The physical symptoms just seem to compound the feelings of depression. It’s so hard to deal with my sadness when my body feels like it's failing me, and it makes me feel so helpless.
+
+change in weight and appetite
+examples
+I've struggled with depression for years and it never really affected my weight until now. I had my son 2 yrs ago and gained some weight that is really making my mental state worse. Admittedly I've been falling into disordered eating habits and not getting out a lot which makes it hard to lose weight but I'm struggling to find the motivation to actually do something instead of just mentally torturing myself. Any advice on getting motivated when you're dealing with serious depression?
+Why does food always work for my depression : I’ve tried medication, therapy, and I even went to a crisis center to get help with my depression. But the medication didn’t work, I felt like my therapist wasn’t helping that much, and I felt more depressed at the crisis center cuz there were people there who were worse off than me. Even before I got professional help, I would always rely on food to make me happy and it always did. Every time I eat, I feel so much better. Even though, people call me a pig and tell me to lose weight, I don’t give a f. As long as I don’t get obese, I just want to rely on food. It’s the only thing that makes me happy. Having friendships with people doesn’t make me happy as they just betray me and I regret putting all that effort in just to pretend that I’m okay. I think that I’ll be fine off alone.
+generated from 2 examples
+I can't seem to stop eating. It's like I'm trying to fill a void, to numb the pain with food. I know it's not healthy, but I can't seem to control it. I'm gaining weight, and it's making me feel even worse. It's like I'm losing control of my own body.
+It's like my body is rebelling against me. I can't seem to control my weight, my appetite, my cravings. I feel like I'm trapped in a cycle of overeating and self-loathing. It's a constant reminder that something is wrong, that I'm not okay.
+I feel like I'm trapped in a cycle of self-destruction. I overeat, I feel guilty, I restrict my diet, I feel deprived, I binge eat again. It's a never-ending cycle of shame and regret.
+I used to love to cook, but now the thought of food makes me feel sick. I've lost my appetite, and I can barely force myself to eat. I'm losing weight, and I can feel my body weakening. It's like my depression is slowly consuming me from the inside out.
+
+no energy, fatigue
+examples
+I brushed my teeth, showered, ate, and got a haircut today ### It’s the most I’ve done in a while and I’m exhausted. It doesn’t get easier.
+Not feeling well. : I am really not feeling well. I have lost all motivation to do anything these last few months. my gpa dropped from a 4.0 to a 2.7, i dont have any energy. i dont want to leave my house, and i dont have a single friend to reach out to. all my friends which i used to have a few months ago, we do not speak anymore. i dont even have enough energy to cry, just sit and stare. I feel so desperately lonely. I am so afraid i will lose my scholarship, but i just feel unable to even start on assignments. I diont really want to keep living like this. It doesnt even feel like living. i cant even eat consistently and when I do eat, its just another shit bowl of soup. what am i supposed to do
+generated from the 2 examples
+I used to love going for walks, but now I can't make it to the mailbox without feeling utterly drained. The simplest things that used to energize me just zap me of what little energy I have left.
+I’m so afraid that I’ll just become used to this, that the constant tiredness will become the norm. It’s hard to imagine my life outside this state of exhaustion, like a battery that never gets fully recharged. It’s so scary to think of my future, if there even is one, when I don’t have the energy to envision it.
+It's like my body is made of lead. Even getting out of bed feels like a monumental effort. Simple tasks like brushing my teeth or making a cup of coffee drain me of energy. I just want to stay under the covers, but I know that's not a solution.
+generated for fatigue used 2 examples
+It's hard to explain to people how truly drained I am. It doesn’t seem as tangible as other physical symptoms, so they sometimes dismiss it as laziness or being “overdramatic”. It’s hard to even fight for understanding when I have no energy.
+It’s so frustrating, watching other people effortlessly complete things I struggle to do. It feels like I’m missing out, but I lack the energy to push myself and even that is painful.
+
+
+mdd
+example
+faking : i am literally diagnosed with MDD, and on Adderall and Prozac for it, but sometimes my problems feel meaningless compared to people who suffer insomnia and complete loss of interest in their favorite things. i'm so fucking useless it's laughable.
+So I’ve had major depression since I was 8… I think it’s just hitting me now how many years I’ve lost to being depressed and not believing in myself. I’ve lost my future because of it. I ruin my academics because of it. And I want it so bad. I want to successful for myself and my family and to achieve stability… but there’s something fundamentally wrong with me. I just see how many people are successful and doing well around me and it hurts. The worst part of it all is that it just comes down to hard work and consistency, not intelligence. Yet my self limiting beliefs never even allowed me to continuously try.
+The vicious cycle of depression is frustrating. I do not want to be alone, but as soon as I am around people, I want to leave and go home. I sit there, feeling like an empty shell of myself, watching everyone around me enjoying themselves. I cannot bring myself to have any meaningful conversation because there is so little I am interested in right now. I am impatiently waiting out this morose period.
+I just turned 18 and I’ve been feeling really nostalgic and overall extremely sad. I’ve had major depression disorder since I was 11, everything before that was great. Sometimes I just want to die so I can be reborn or some shit and experience everything again. Everything was so much brighter (literally even the colors were more vibrant), I looked forward to going to school and learning, playing in my own little world, riding my bike with my best friend, I miss cuddling with my mom on the couch and most of all I miss my innocence and resilience. I didn’t really have the “high school experience” and I find myself regretting saying no to hanging out with people. It’s fucked up cause I know it’s hereditary for me, but I hate myself for allowing myself to be swallowed by my depression. I hate that eventually I’m going to die and know that I missed out on so many things.
+I knew I had a fucked up brain for a while, but I recently went back to therapy and was told that I have severe Major Depressive Disorder and it felt... nice. It’s nice to have someone give a name to your fucked up feelings. I’ve always been afraid that I was just overreacting or didn’t really have real problems, but it’s real. Don’t get me wrong, I’m still sad as shit, but at least my sadness has a name.
+Tired all the time ### I am 32 and live with my parents and I am tired all the time my psychologist diagnosed me with severe depression and anxiety but everyone in my family thinks I am faking it and that I am just LAZY. I have lost jobs, friends and relationships over this. All I feel is the disappointment from everyone around me that I am not good enough or that I need to “suck it up” and move on. These past months the thoughts have been getting more and more intense so all I can think to do is sleep longer and long to push them away but even that is starting to fail me. I am just a lost soul in a sea we’re I am not allowed to breathe.
+generated from 2 examples
+I just want to be able to get out of bed. I've been diagnosed with Major Depressive Disorder, and every morning feels like climbing Mount Everest. The smallest tasks feel impossible.
+I feel like a burden to everyone. I'm so drained and unmotivated. I can't seem to hold down a job, and I just feel like I'm letting everyone down. I've been diagnosed with Major Depressive Disorder, and I'm terrified of becoming a statistic.
+I can't seem to find any joy in anything. I used to love my hobbies, but now they feel pointless. I've been diagnosed with Major Depressive Disorder, and it feels like I'm watching my life pass me by.
+I'm so angry at myself for not being able to get better. I've been diagnosed with Major Depressive Disorder, and I feel like a complete failure. I know I need help, but I can't seem to motivate myself to reach out.
+generated from 2 examples
+I have major depressive disorder, and it's like my brain is constantly stuck on "repeat." The same negative thoughts just keep looping over and over, and I can't seem to escape them.
+I have major depressive disorder, and it's so hard to explain to people who haven't experienced it. It's not just feeling sad; it's a complete loss of motivation, joy, and hope. It's like a fog that never lifts.
+generated from 2 examples
+I feel like I'm constantly playing catch-up. I've had Major Depressive Disorder since I was young, and it feels like I've missed out on so much. I watch everyone else experience life, and I just feel left behind.
+I'm so tired of trying. I've been diagnosed with Major Depressive Disorder, and it feels like I'm constantly fighting against myself. I just want to give up, but I'm terrified of the consequences.
+

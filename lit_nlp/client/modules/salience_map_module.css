@@ -1,0 +1,86 @@
+.group-label {
+  text-align: start;
+  vertical-align: baseline;
+  width: 295px;
+}
+
+.group-container {
+  padding: 4px;
+  position: relative; /* to allow overlay div */
+  vertical-align: top;
+}
+
+.module-toolbar > * {
+  margin: 0px 4px;
+}
+
+.salience-target-dropdown {
+  min-width: 60px;
+  margin-left: 4px;
+}
+
+.module-footer > * { min-width: 0; }
+
+.module-footer {
+  justify-content: space-between;
+}
+
+.slider-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.tokens-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.method-row-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.controls-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controls-toggle mwc-icon {
+  --mdc-icon-size: 16px;
+}
+
+.controls-panel {
+  width: 295px;
+}
+
+color-legend {
+  margin-right: 16px;
+}
+
+.method-results {
+  padding: 4px;
+}
+
+.salience-placeholder {
+  color: var(--lit-neutral-800);
+}
+
+.loading {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.spinner-container {
+  opacity: 1.0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

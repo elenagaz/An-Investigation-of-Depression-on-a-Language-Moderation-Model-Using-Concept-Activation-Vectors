@@ -1,0 +1,444 @@
+#global-settings-holder {
+  width: 0;
+  height: 0;
+  z-index: 4;
+  position: fixed;
+}
+
+#overlay {
+  background: rgba(4, 29, 51, .47);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: opacity 250ms;
+}
+
+#overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#global-settings {
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  height: 80vh;
+  width: 80vw;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: var(--lit-box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#global-settings.hide {
+  display: none;
+}
+
+#holder {
+  display: flex;
+  height: calc(100% - 64px);
+}
+
+#title-bar {
+  font-family: 'Google Sans', sans;
+  border-bottom: 1px solid #dadce0;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 16px;
+  display:flex;
+  align-items:center;
+  column-gap: 4;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 293px;
+  border-right: 1px solid #dadce0;
+}
+
+#links {
+  font-family: 'Google Sans', sans;
+  display: flex;
+  justify-content: center;
+  color: grey;
+  border-top: 1px solid #dadce0;
+  height: 60px;
+  align-items: center;
+}
+
+a {
+  color: var(--app-dark-text-color);
+  text-decoration: none;
+}
+
+a.link-out {
+  color: #888;
+  padding: 0 7px;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.tab{
+  font-family: 'Google Sans', sans;
+  padding: 16px;
+  height: 16px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  margin: 8px;
+  margin-left: 0;
+  cursor: pointer;
+}
+.tab:hover {
+  background: #f4fcfe;
+  color: #129eaf;
+}
+.tab.selected {
+  background: #e4f7fb;
+  color: #129eaf
+}
+
+#main-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+}
+
+#bottombar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dadce0;
+  height: 60px;
+  align-items: center;
+  padding: 0 32px;
+}
+
+#state {
+  font-size: 12px;
+  color: #888;
+}
+.info {
+  color: #098591;
+}
+
+#buttons-container,
+#buttons {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+}
+
+#config {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  min-height: 0;
+}
+
+.config-list {
+  border: 1px solid #dadce0;
+  flex: 1 1;
+  margin: 16px;
+  overflow-y: scroll;
+}
+
+.config-line {
+  width: 100%;
+  min-width: max-content;
+  border-bottom: 1px solid #dadce0;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  min-width: 0;
+}
+
+.config-line.selected {
+  background: #e4f7fb;
+}
+.config-line.disabled mwc-formfield,
+.config-line.disabled .description-preview,
+.config-line.disabled .status{
+  opacity: 0.5;
+}
+.config-line:hover {
+  background: #f4fcfe;
+}
+
+.rows-title {
+  display: flex;
+}
+
+.expander {
+  cursor: pointer;
+}
+
+.left-offset {
+  margin-left: 53px;
+}
+
+.model-dataset-loading {
+  flex: 1 1;
+  margin: 0 16px;
+  width: calc(100% - 24pt);
+}
+
+.model-dataset-loading .controls {
+  border: 1px solid var(--lit-neutral-300);
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  padding: 16px;
+}
+
+.model-dataset-loading .controls .actions {
+  align-items: end;
+  row-gap: 4px;
+}
+
+.model-dataset-loading .controls .actions,
+.model-dataset-loading .controls .selector {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.model-dataset-loading .controls .options {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  padding: 0 16px;
+  row-gap: 8px;
+}
+
+.model-dataset-loading .controls .options .option-entry {
+  align-items: center;
+  column-gap: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* The first child of .options is always the new_name field, which is special */
+.model-dataset-loading .controls .options .option-entry:first-child {
+  border-bottom: 1px solid var(--lit-neutral-300);
+  padding-bottom: 8px;
+}
+
+.model-dataset-loading .controls .options .option-entry label {
+  flex: 0 0 200px;
+}
+
+.model-dataset-loading .controls .options .option-entry lit-input-field {
+  flex-grow: 1;
+}
+
+.model-dataset-loading .controls .options .option-entry.missing label {
+  color: var(--google-red-500);
+  font-weight: bold;
+}
+
+.model-dataset-loading .header {
+  color: var(--lit-neutral-700);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+#bottombar .status-area {
+  color: var(--google-red-500);
+}
+
+.expanded-info {
+  display: flex;
+  max-height: 0;
+  background: #f8f9fa;
+  overflow: hidden;
+  font-size: 11px;
+  color: #3c4043;
+  box-sizing: border-box;
+}
+
+.datapoints-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.datapoints-label-holder {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.datapoints-file-input {
+  flex: 1;
+  height: 22px;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.expanded-info.open {
+  gap: 4px;
+  padding: 6px 6px 6px 0;
+  max-height: 25vh;
+  border-bottom: 1px solid #dadce0;
+}
+
+.expanded-info > * {
+  overflow-y: auto;
+}
+
+.expanded-info mwc-icon {
+  font-size: 10pt !important;
+}
+
+.info-group-title {
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.info-group-title:first-child {
+  padding-top: 0px;
+}
+
+.info-group-subtitle {
+  font-style: italic;
+}
+
+.info-line {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.indent-line {
+  padding-left: 7px;
+  border-left: 1px solid #dadce0;
+}
+
+.error {
+  color: #c5221f !important;
+}
+
+.config-title {
+  font-family: 'Google Sans', sans;
+  font-size: 1.5rem;
+  padding: 16px 16px 0 16px;
+  margin-bottom: 4px;
+}
+
+.description {
+  padding: 0 16px 0 16px;
+  color: #888;
+}
+
+/**
+ * Undo marked's handling of line breaks and restore normal whitespace handling.
+ * This gives much better formatting of descriptions that were designed to be
+ * readable in plaintext / code comments:
+ * - Single newlines don't get <p> tags, but are preserved by pre-wrap.
+ * - Double newlines get <p> tags from marked(), so we strip the extra margins
+ *   and let pre-wrap handle the line break instead.
+ */
+.description-text {
+  white-space: pre-wrap;
+}
+.description-text > p {
+  margin-block: 0;
+}
+
+.status {
+  padding: 0 16px;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.status.selected {
+  color: #129eaf;
+}
+.status mwc-icon {
+  padding-right: 5px;
+}
+
+.prev-next-buttons {
+  margin: 16px 12px; /* 12px acounts for .hairline-button margin */
+}
+
+button mwc-icon {
+  font-size: 16px;
+}
+
+button.next {
+  float: right;
+}
+
+button.prev {
+  float: left;
+}
+
+.one-col {
+  width: 33%;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.two-col {
+  width: 66%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-third-col {
+  width: 33%;
+  min-width: 33%;
+}
+
+.flex-col {
+  flex: 1;
+}
+
+.status-col {
+  margin-left: 8px;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#configure-lit-icon {
+  margin-left: 8px;
+}

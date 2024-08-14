@@ -1,0 +1,36 @@
+.scatterplot {
+  position: relative;
+  margin: 8px;
+  min-height: 112px;
+}
+
+.scatterplot .axes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.scatterplot .scene {
+  min-height: 100px;
+  height: 100px;
+  max-height: 100px;
+  max-width: calc(100% - 40px);
+  margin-left: 32px;
+  cursor: crosshair;
+}
+
+#regression-line,
+#threshold-line {
+  stroke-width: 2px;
+}
+
+.confusion-zone {
+  fill: url(#diagonalHatch);
+  fill-opacity: .30;
+}
+
+#diagonalHatch path{
+  stroke: var(--lit-neutral-700);
+  stroke-width: 1;
+}

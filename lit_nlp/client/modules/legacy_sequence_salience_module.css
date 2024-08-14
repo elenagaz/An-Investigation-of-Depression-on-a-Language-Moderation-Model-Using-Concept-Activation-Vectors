@@ -1,0 +1,78 @@
+table.field-table {
+  --border-spacing: 8px;
+  width: calc(100% - var(--border-spacing));
+  min-width: calc(100% - var(--border-spacing));
+  border-spacing: var(--border-spacing);
+}
+
+table.field-table th {
+  vertical-align: top;
+  text-align: start;
+}
+
+lit-numeric-input {
+  max-width: 200px;
+}
+
+.subfield-title {
+  padding-top: 6px; /* align title with first row of content */
+}
+
+/**
+ * Module controls
+ */
+.module-results-area {
+  overflow-x: clip;
+}
+
+.module-toolbar {
+  border-bottom: 1px solid #dadce0;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.module-footer {
+  justify-content: space-between;
+}
+
+.controls-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.controls-group > * {
+  margin: 0 2px;
+}
+
+/* Allow dropdown area to grow, but not to cause line wrapping. */
+.controls-group-variable {
+  flex: 1;
+  overflow-x: clip;
+  margin-right: 8px;
+}
+
+.controls-group-variable .dropdown {
+  max-width: 100%;
+}
+
+.vertical-separator {
+  background: #dadce0;
+  width: 2px;
+  height: 1.2rem;
+  padding: 0;
+  margin: 0 8px;
+}
+
+color-legend {
+  margin-right: 16px;
+}
+
+.gamma-value {
+  min-width: 32px;
+}
+
+.module-footer > * { min-width: 0; }
+
+.controls-group > * { min-width: 0; }

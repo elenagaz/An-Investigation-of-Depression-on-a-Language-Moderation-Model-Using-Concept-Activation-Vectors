@@ -1,0 +1,338 @@
+C:\Users\elena\miniconda3\envs\lit-nlp2\python.exe C:\Users\elena\PycharmProjects\lit_bachelor\lit_nlp\examples\my_model_moderation\moderation_demo.py 
+2024-08-07 20:12:56.978525: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-08-07 20:12:56.979769: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-08-07 20:13:03.174558: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-08-07 20:13:03.175544: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2024-08-07 20:13:03.176479: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2024-08-07 20:13:03.177529: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2024-08-07 20:13:03.178965: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2024-08-07 20:13:03.179996: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2024-08-07 20:13:03.180959: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2024-08-07 20:13:03.181896: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2024-08-07 20:13:03.182500: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0807 20:13:03.183382 10756 moderation_demo.py:73] Working directory: KoalaAI/Text-Moderation
+2024-08-07 20:13:04.432945: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFDebertaForSequenceClassification: ['deberta.embeddings.position_ids']
+- This IS expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFDebertaForSequenceClassification from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFDebertaForSequenceClassification were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDebertaForSequenceClassification for predictions without further training.
+I0807 20:13:08.184391 10756 dev_server.py:90] 
+ (    (           
+ )\ ) )\ )  *   ) 
+(()/((()/(` )  /( 
+ /(_))/(_))( )(_))
+(_)) (_)) (_(_()) 
+| |  |_ _||_   _| 
+| |__ | |   | |   
+|____|___|  |_|   
+
+
+I0807 20:13:08.184391 10756 dev_server.py:91] Starting LIT server...
+W0807 20:13:08.185373 10756 model.py:114] Unable to infer init spec for model 'ModerationModel'. Unable to infer a type for parameter 'model_name' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0807 20:13:08.185565 10756 dataset.py:154] Unable to infer init spec for dataset 'ModerationDataset'. Unable to infer a type for parameter 'file_path' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+W0807 20:13:08.192625 10756 dataset.py:154] Unable to infer init spec for dataset 'NoneDataset'. Unable to infer a type for parameter 'models' of '__init__'. Please add a type hint or default value, or implement a Spec literal.
+I0807 20:13:08.193630 10756 rouge_scorer.py:83] Using default tokenizer.
+I0807 20:13:08.197625 10756 wsgi_serving.py:46] 
+
+Starting Server on port 8081
+You can navigate to http://127.0.0.1:8081
+
+
+I0807 20:13:08.205579 10756 _internal.py:187] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+I0807 20:13:08.205579 10756 _internal.py:187] Press CTRL+C to quit
+I0807 20:13:13.363698 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 20:13:13] "POST /get_info HTTP/1.1" 200 -
+I0807 20:13:13.491437 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 20:13:13] "POST /get_dataset?dataset_name=moderation_dataset HTTP/1.1" 200 -
+I0807 20:13:13.651731 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 20:13:13.653728 10756 caching.py:306] CachingModelWrapper 'moderation': 648 misses out of 648 inputs
+I0807 20:13:13.654726 10756 moderation.py:316] -------------------------> using predict here
+You're using a DebertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+I0807 20:15:28.259571 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:17:42.789129 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:20:45.776861 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:24:11.412803 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:24:28.041930 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:24:39.061395 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:24:51.228714 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:25:11.321720 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:26:50.586800 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:27:02.453009 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:27:56.007356 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:31:37.354964 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:31:59.816902 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:32:16.534492 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:32:39.527709 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:32:50.350042 10756 moderation.py:316] -------------------------> using predict here
+I0807 20:32:53.291335 10756 caching.py:314] Received 648 predictions from model
+I0807 20:32:53.413414 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 20:32:53] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=classification&do_predict=1 HTTP/1.1" 200 -
+I0807 20:32:53.461106 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 20:32:53.462106 10756 projection.py:183] Projection request: instance key: frozenset({('model_name', 'moderation'), ('use_input', False), ('field_name', 'cls_emb'), ('proj_kw', frozenset({('n_components', 3)}))})
+I0807 20:32:53.492411 10756 projection.py:163] Creating new projection instance on 648 points
+I0807 20:32:53.514536 10756 umap.py:38] UMAP input x_train: (648, 768)
+I0807 20:33:06.897891 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 20:33:06] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=umap&do_predict=1 HTTP/1.1" 200 -
+I0807 20:33:06.915992 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 20:33:06.917992 10756 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 20:33:06.917992 10756 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 20:33:06.918993 10756 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 20:33:06.918993 10756 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 20:33:06.932994 10756 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 20:33:06.933994 10756 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 20:33:06.933994 10756 metrics.py:56] Skipping 'tokens': No parent provided.
+I0807 20:33:06.934993 10756 metrics.py:71] Skipping 'tokens_prompt': incompatible parent 'prompt'.
+I0807 20:33:06.935995 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 20:33:06] "POST /get_metrics?model=moderation&dataset_name=moderation_dataset&metrics=multiclass,paired&do_predict=1 HTTP/1.1" 200 -
+I0807 21:15:22.154740 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+W0807 21:15:22.166086 10756 caching.py:288] Attmepting to retrieve 42 (of 648) predictions from the cache where the cache key is None - this can be from a missing or empty example id. These will call model.predict() on this and subsequent calls.
+I0807 21:15:22.168047 10756 caching.py:306] CachingModelWrapper 'moderation': 42 misses out of 648 inputs
+I0807 21:15:22.169036 10756 moderation.py:316] -------------------------> using predict here
+I0807 21:19:03.563218 10756 moderation.py:316] -------------------------> using predict here
+I0807 21:19:08.581002 10756 caching.py:314] Received 42 predictions from model
+I0807 21:19:08.592220 10756 compare_predictions.py:57] Comparing of data
+E0807 21:19:08.595218 10756 compare_predictions.py:14] Difference found at [0]/input_embs (numpy arrays differ)
+E0807 21:19:08.617256 10756 compare_predictions.py:14] Difference found at [0]/cls_grad (numpy arrays differ)
+E0807 21:19:08.618294 10756 compare_predictions.py:14] Difference found at [0]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:08.618294 10756 compare_predictions.py:14] Difference found at [1]/input_embs (numpy arrays differ)
+E0807 21:19:08.634230 10756 compare_predictions.py:14] Difference found at [1]/cls_grad (numpy arrays differ)
+E0807 21:19:08.635419 10756 compare_predictions.py:14] Difference found at [1]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:08.716302 10756 compare_predictions.py:14] Difference found at [8]/cls_emb (numpy arrays differ)
+E0807 21:19:08.716302 10756 compare_predictions.py:14] Difference found at [8]/input_embs (numpy arrays differ)
+E0807 21:19:08.716302 10756 compare_predictions.py:14] Difference found at [8]/layer_0/avg_emb (numpy arrays differ)
+E0807 21:19:08.716302 10756 compare_predictions.py:14] Difference found at [8]/layer_1/avg_emb (numpy arrays differ)
+E0807 21:19:08.717278 10756 compare_predictions.py:14] Difference found at [8]/layer_2/avg_emb (numpy arrays differ)
+E0807 21:19:08.717278 10756 compare_predictions.py:14] Difference found at [8]/layer_3/avg_emb (numpy arrays differ)
+E0807 21:19:08.718278 10756 compare_predictions.py:14] Difference found at [8]/layer_4/avg_emb (numpy arrays differ)
+E0807 21:19:08.718479 10756 compare_predictions.py:14] Difference found at [8]/layer_5/avg_emb (numpy arrays differ)
+E0807 21:19:08.718479 10756 compare_predictions.py:14] Difference found at [8]/layer_6/avg_emb (numpy arrays differ)
+E0807 21:19:08.719496 10756 compare_predictions.py:14] Difference found at [8]/layer_7/avg_emb (numpy arrays differ)
+E0807 21:19:08.719496 10756 compare_predictions.py:14] Difference found at [8]/layer_8/avg_emb (numpy arrays differ)
+E0807 21:19:08.719496 10756 compare_predictions.py:14] Difference found at [8]/layer_9/avg_emb (numpy arrays differ)
+E0807 21:19:08.719496 10756 compare_predictions.py:14] Difference found at [8]/layer_10/avg_emb (numpy arrays differ)
+E0807 21:19:08.719496 10756 compare_predictions.py:14] Difference found at [8]/layer_11/avg_emb (numpy arrays differ)
+E0807 21:19:08.719496 10756 compare_predictions.py:14] Difference found at [8]/layer_12/avg_emb (numpy arrays differ)
+E0807 21:19:08.728481 10756 compare_predictions.py:14] Difference found at [8]/layer_1/attention (numpy arrays differ)
+E0807 21:19:08.742861 10756 compare_predictions.py:14] Difference found at [8]/layer_2/attention (numpy arrays differ)
+E0807 21:19:08.751862 10756 compare_predictions.py:14] Difference found at [8]/layer_3/attention (numpy arrays differ)
+E0807 21:19:08.758934 10756 compare_predictions.py:14] Difference found at [8]/layer_4/attention (numpy arrays differ)
+E0807 21:19:08.765906 10756 compare_predictions.py:14] Difference found at [8]/layer_5/attention (numpy arrays differ)
+E0807 21:19:08.773907 10756 compare_predictions.py:14] Difference found at [8]/layer_6/attention (numpy arrays differ)
+E0807 21:19:08.784432 10756 compare_predictions.py:14] Difference found at [8]/layer_7/attention (numpy arrays differ)
+E0807 21:19:08.795434 10756 compare_predictions.py:14] Difference found at [8]/layer_8/attention (numpy arrays differ)
+E0807 21:19:08.807493 10756 compare_predictions.py:14] Difference found at [8]/layer_9/attention (numpy arrays differ)
+E0807 21:19:08.821019 10756 compare_predictions.py:14] Difference found at [8]/layer_10/attention (numpy arrays differ)
+E0807 21:19:08.832988 10756 compare_predictions.py:14] Difference found at [8]/layer_11/attention (numpy arrays differ)
+E0807 21:19:08.845984 10756 compare_predictions.py:14] Difference found at [8]/layer_12/attention (numpy arrays differ)
+E0807 21:19:08.845984 10756 compare_predictions.py:14] Difference found at [8]/probas (numpy arrays differ)
+E0807 21:19:08.853217 10756 compare_predictions.py:14] Difference found at [8]/cls_grad (numpy arrays differ)
+E0807 21:19:08.856306 10756 compare_predictions.py:14] Difference found at [8]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:08.856306 10756 compare_predictions.py:14] Difference found at [9]/input_embs (numpy arrays differ)
+E0807 21:19:08.942460 10756 compare_predictions.py:14] Difference found at [9]/cls_grad (numpy arrays differ)
+E0807 21:19:08.945469 10756 compare_predictions.py:14] Difference found at [9]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.157678 10756 compare_predictions.py:14] Difference found at [15]/input_embs (numpy arrays differ)
+E0807 21:19:09.166817 10756 compare_predictions.py:14] Difference found at [15]/cls_grad (numpy arrays differ)
+E0807 21:19:09.168815 10756 compare_predictions.py:14] Difference found at [15]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.168815 10756 compare_predictions.py:14] Difference found at [16]/input_embs (numpy arrays differ)
+E0807 21:19:09.209939 10756 compare_predictions.py:14] Difference found at [16]/cls_grad (numpy arrays differ)
+E0807 21:19:09.210956 10756 compare_predictions.py:14] Difference found at [16]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.218304 10756 compare_predictions.py:14] Difference found at [18]/input_embs (numpy arrays differ)
+E0807 21:19:09.242269 10756 compare_predictions.py:14] Difference found at [18]/cls_grad (numpy arrays differ)
+E0807 21:19:09.244212 10756 compare_predictions.py:14] Difference found at [18]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.244212 10756 compare_predictions.py:14] Difference found at [19]/input_embs (numpy arrays differ)
+E0807 21:19:09.301802 10756 compare_predictions.py:14] Difference found at [19]/cls_grad (numpy arrays differ)
+E0807 21:19:09.303902 10756 compare_predictions.py:14] Difference found at [19]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.320257 10756 compare_predictions.py:14] Difference found at [21]/input_embs (numpy arrays differ)
+E0807 21:19:09.335324 10756 compare_predictions.py:14] Difference found at [21]/cls_grad (numpy arrays differ)
+E0807 21:19:09.337635 10756 compare_predictions.py:14] Difference found at [21]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.429486 10756 compare_predictions.py:14] Difference found at [28]/input_embs (numpy arrays differ)
+E0807 21:19:09.442115 10756 compare_predictions.py:14] Difference found at [28]/cls_grad (numpy arrays differ)
+E0807 21:19:09.443114 10756 compare_predictions.py:14] Difference found at [28]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.575631 10756 compare_predictions.py:14] Difference found at [38]/input_embs (numpy arrays differ)
+E0807 21:19:09.659659 10756 compare_predictions.py:14] Difference found at [38]/cls_grad (numpy arrays differ)
+E0807 21:19:09.663635 10756 compare_predictions.py:14] Difference found at [38]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.663635 10756 compare_predictions.py:14] Difference found at [39]/input_embs (numpy arrays differ)
+E0807 21:19:09.680369 10756 compare_predictions.py:14] Difference found at [39]/cls_grad (numpy arrays differ)
+E0807 21:19:09.682363 10756 compare_predictions.py:14] Difference found at [39]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.723587 10756 compare_predictions.py:14] Difference found at [42]/input_embs (numpy arrays differ)
+E0807 21:19:09.734123 10756 compare_predictions.py:14] Difference found at [42]/cls_grad (numpy arrays differ)
+E0807 21:19:09.735062 10756 compare_predictions.py:14] Difference found at [42]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.753218 10756 compare_predictions.py:14] Difference found at [44]/input_embs (numpy arrays differ)
+E0807 21:19:09.761262 10756 compare_predictions.py:14] Difference found at [44]/cls_grad (numpy arrays differ)
+E0807 21:19:09.762265 10756 compare_predictions.py:14] Difference found at [44]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.762265 10756 compare_predictions.py:14] Difference found at [45]/input_embs (numpy arrays differ)
+E0807 21:19:09.829293 10756 compare_predictions.py:14] Difference found at [45]/cls_grad (numpy arrays differ)
+E0807 21:19:09.831756 10756 compare_predictions.py:14] Difference found at [45]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:09.957812 10756 compare_predictions.py:14] Difference found at [50]/input_embs (numpy arrays differ)
+E0807 21:19:09.967213 10756 compare_predictions.py:14] Difference found at [50]/cls_grad (numpy arrays differ)
+E0807 21:19:09.967213 10756 compare_predictions.py:14] Difference found at [50]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.030682 10756 compare_predictions.py:14] Difference found at [56]/input_embs (numpy arrays differ)
+E0807 21:19:10.037596 10756 compare_predictions.py:14] Difference found at [56]/cls_grad (numpy arrays differ)
+E0807 21:19:10.038596 10756 compare_predictions.py:14] Difference found at [56]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.090762 10756 compare_predictions.py:14] Difference found at [61]/cls_emb (numpy arrays differ)
+E0807 21:19:10.090762 10756 compare_predictions.py:14] Difference found at [61]/input_embs (numpy arrays differ)
+E0807 21:19:10.090762 10756 compare_predictions.py:14] Difference found at [61]/layer_1/avg_emb (numpy arrays differ)
+E0807 21:19:10.090762 10756 compare_predictions.py:14] Difference found at [61]/layer_2/avg_emb (numpy arrays differ)
+E0807 21:19:10.090762 10756 compare_predictions.py:14] Difference found at [61]/layer_3/avg_emb (numpy arrays differ)
+E0807 21:19:10.090762 10756 compare_predictions.py:14] Difference found at [61]/layer_4/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_5/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_6/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_7/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_8/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_9/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_10/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_11/avg_emb (numpy arrays differ)
+E0807 21:19:10.091763 10756 compare_predictions.py:14] Difference found at [61]/layer_12/avg_emb (numpy arrays differ)
+E0807 21:19:10.103983 10756 compare_predictions.py:14] Difference found at [61]/layer_1/attention (numpy arrays differ)
+E0807 21:19:10.115125 10756 compare_predictions.py:14] Difference found at [61]/layer_2/attention (numpy arrays differ)
+E0807 21:19:10.125843 10756 compare_predictions.py:14] Difference found at [61]/layer_3/attention (numpy arrays differ)
+E0807 21:19:10.134325 10756 compare_predictions.py:14] Difference found at [61]/layer_4/attention (numpy arrays differ)
+E0807 21:19:10.144326 10756 compare_predictions.py:14] Difference found at [61]/layer_5/attention (numpy arrays differ)
+E0807 21:19:10.155209 10756 compare_predictions.py:14] Difference found at [61]/layer_6/attention (numpy arrays differ)
+E0807 21:19:10.163396 10756 compare_predictions.py:14] Difference found at [61]/layer_7/attention (numpy arrays differ)
+E0807 21:19:10.173299 10756 compare_predictions.py:14] Difference found at [61]/layer_8/attention (numpy arrays differ)
+E0807 21:19:10.182261 10756 compare_predictions.py:14] Difference found at [61]/layer_9/attention (numpy arrays differ)
+E0807 21:19:10.193407 10756 compare_predictions.py:14] Difference found at [61]/layer_10/attention (numpy arrays differ)
+E0807 21:19:10.203878 10756 compare_predictions.py:14] Difference found at [61]/layer_11/attention (numpy arrays differ)
+E0807 21:19:10.213965 10756 compare_predictions.py:14] Difference found at [61]/layer_12/attention (numpy arrays differ)
+E0807 21:19:10.213965 10756 compare_predictions.py:14] Difference found at [61]/probas (numpy arrays differ)
+E0807 21:19:10.221970 10756 compare_predictions.py:14] Difference found at [61]/cls_grad (numpy arrays differ)
+E0807 21:19:10.226033 10756 compare_predictions.py:14] Difference found at [61]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.226033 10756 compare_predictions.py:14] Difference found at [62]/input_embs (numpy arrays differ)
+E0807 21:19:10.245007 10756 compare_predictions.py:14] Difference found at [62]/cls_grad (numpy arrays differ)
+E0807 21:19:10.245007 10756 compare_predictions.py:14] Difference found at [62]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.315509 10756 compare_predictions.py:14] Difference found at [68]/input_embs (numpy arrays differ)
+E0807 21:19:10.339650 10756 compare_predictions.py:14] Difference found at [68]/cls_grad (numpy arrays differ)
+E0807 21:19:10.340703 10756 compare_predictions.py:14] Difference found at [68]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/cls_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/input_embs (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_0/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_1/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_2/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_3/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_4/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_5/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_6/avg_emb (numpy arrays differ)
+E0807 21:19:10.413075 10756 compare_predictions.py:14] Difference found at [74]/layer_7/avg_emb (numpy arrays differ)
+E0807 21:19:10.414073 10756 compare_predictions.py:14] Difference found at [74]/layer_8/avg_emb (numpy arrays differ)
+E0807 21:19:10.414073 10756 compare_predictions.py:14] Difference found at [74]/layer_9/avg_emb (numpy arrays differ)
+E0807 21:19:10.414241 10756 compare_predictions.py:14] Difference found at [74]/layer_10/avg_emb (numpy arrays differ)
+E0807 21:19:10.414241 10756 compare_predictions.py:14] Difference found at [74]/layer_11/avg_emb (numpy arrays differ)
+E0807 21:19:10.414241 10756 compare_predictions.py:14] Difference found at [74]/layer_12/avg_emb (numpy arrays differ)
+E0807 21:19:10.421300 10756 compare_predictions.py:14] Difference found at [74]/layer_1/attention (numpy arrays differ)
+E0807 21:19:10.430226 10756 compare_predictions.py:14] Difference found at [74]/layer_2/attention (numpy arrays differ)
+E0807 21:19:10.445226 10756 compare_predictions.py:14] Difference found at [74]/layer_3/attention (numpy arrays differ)
+E0807 21:19:10.458228 10756 compare_predictions.py:14] Difference found at [74]/layer_4/attention (numpy arrays differ)
+E0807 21:19:10.471602 10756 compare_predictions.py:14] Difference found at [74]/layer_5/attention (numpy arrays differ)
+E0807 21:19:10.482863 10756 compare_predictions.py:14] Difference found at [74]/layer_6/attention (numpy arrays differ)
+E0807 21:19:10.494036 10756 compare_predictions.py:14] Difference found at [74]/layer_7/attention (numpy arrays differ)
+E0807 21:19:10.503037 10756 compare_predictions.py:14] Difference found at [74]/layer_8/attention (numpy arrays differ)
+E0807 21:19:10.511928 10756 compare_predictions.py:14] Difference found at [74]/layer_9/attention (numpy arrays differ)
+E0807 21:19:10.521183 10756 compare_predictions.py:14] Difference found at [74]/layer_10/attention (numpy arrays differ)
+E0807 21:19:10.560351 10756 compare_predictions.py:14] Difference found at [74]/layer_11/attention (numpy arrays differ)
+E0807 21:19:10.567307 10756 compare_predictions.py:14] Difference found at [74]/layer_12/attention (numpy arrays differ)
+E0807 21:19:10.567307 10756 compare_predictions.py:14] Difference found at [74]/probas (numpy arrays differ)
+E0807 21:19:10.572432 10756 compare_predictions.py:14] Difference found at [74]/cls_grad (numpy arrays differ)
+E0807 21:19:10.576493 10756 compare_predictions.py:14] Difference found at [74]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.576493 10756 compare_predictions.py:14] Difference found at [75]/input_embs (numpy arrays differ)
+E0807 21:19:10.696206 10756 compare_predictions.py:14] Difference found at [75]/cls_grad (numpy arrays differ)
+E0807 21:19:10.699247 10756 compare_predictions.py:14] Difference found at [75]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.699247 10756 compare_predictions.py:14] Difference found at [76]/input_embs (numpy arrays differ)
+E0807 21:19:10.736274 10756 compare_predictions.py:14] Difference found at [76]/cls_grad (numpy arrays differ)
+E0807 21:19:10.738274 10756 compare_predictions.py:14] Difference found at [76]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.738274 10756 compare_predictions.py:14] Difference found at [77]/input_embs (numpy arrays differ)
+E0807 21:19:10.771587 10756 compare_predictions.py:14] Difference found at [77]/cls_grad (numpy arrays differ)
+E0807 21:19:10.774575 10756 compare_predictions.py:14] Difference found at [77]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.774575 10756 compare_predictions.py:14] Difference found at [78]/input_embs (numpy arrays differ)
+E0807 21:19:10.793596 10756 compare_predictions.py:14] Difference found at [78]/cls_grad (numpy arrays differ)
+E0807 21:19:10.795594 10756 compare_predictions.py:14] Difference found at [78]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:10.796594 10756 compare_predictions.py:14] Difference found at [79]/input_embs (numpy arrays differ)
+E0807 21:19:10.809777 10756 compare_predictions.py:14] Difference found at [79]/cls_grad (numpy arrays differ)
+E0807 21:19:10.810843 10756 compare_predictions.py:14] Difference found at [79]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:12.294980 10756 compare_predictions.py:14] Difference found at [123]/input_embs (numpy arrays differ)
+E0807 21:19:12.316408 10756 compare_predictions.py:14] Difference found at [123]/cls_grad (numpy arrays differ)
+E0807 21:19:12.317405 10756 compare_predictions.py:14] Difference found at [123]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:12.354259 10756 compare_predictions.py:14] Difference found at [126]/input_embs (numpy arrays differ)
+E0807 21:19:12.370627 10756 compare_predictions.py:14] Difference found at [126]/cls_grad (numpy arrays differ)
+E0807 21:19:12.372635 10756 compare_predictions.py:14] Difference found at [126]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:12.380762 10756 compare_predictions.py:14] Difference found at [128]/input_embs (numpy arrays differ)
+E0807 21:19:12.495170 10756 compare_predictions.py:14] Difference found at [128]/cls_grad (numpy arrays differ)
+E0807 21:19:12.499901 10756 compare_predictions.py:14] Difference found at [128]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:12.614977 10756 compare_predictions.py:14] Difference found at [134]/input_embs (numpy arrays differ)
+E0807 21:19:12.630336 10756 compare_predictions.py:14] Difference found at [134]/cls_grad (numpy arrays differ)
+E0807 21:19:12.631002 10756 compare_predictions.py:14] Difference found at [134]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:12.720247 10756 compare_predictions.py:14] Difference found at [136]/input_embs (numpy arrays differ)
+E0807 21:19:12.752307 10756 compare_predictions.py:14] Difference found at [136]/probas (numpy arrays differ)
+E0807 21:19:12.755361 10756 compare_predictions.py:14] Difference found at [136]/cls_grad (numpy arrays differ)
+E0807 21:19:12.756368 10756 compare_predictions.py:14] Difference found at [136]/token_grad_prompt (numpy arrays differ)
+E0807 21:19:12.980160 10756 compare_predictions.py:14] Difference found at [139]/cls_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/input_embs (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_0/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_1/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_2/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_3/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_4/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_5/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_6/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_7/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_8/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_9/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_10/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_11/avg_emb (numpy arrays differ)
+E0807 21:19:12.981102 10756 compare_predictions.py:14] Difference found at [139]/layer_12/avg_emb (numpy arrays differ)
+E0807 21:19:12.988895 10756 compare_predictions.py:14] Difference found at [139]/layer_1/attention (numpy arrays differ)
+E0807 21:19:12.996898 10756 compare_predictions.py:14] Difference found at [139]/layer_2/attention (numpy arrays differ)
+E0807 21:19:13.004909 10756 compare_predictions.py:14] Difference found at [139]/layer_3/attention (numpy arrays differ)
+E0807 21:19:13.011910 10756 compare_predictions.py:14] Difference found at [139]/layer_4/attention (numpy arrays differ)
+E0807 21:19:13.018907 10756 compare_predictions.py:14] Difference found at [139]/layer_5/attention (numpy arrays differ)
+E0807 21:19:13.027011 10756 compare_predictions.py:14] Difference found at [139]/layer_6/attention (numpy arrays differ)
+E0807 21:19:13.035009 10756 compare_predictions.py:14] Difference found at [139]/layer_7/attention (numpy arrays differ)
+E0807 21:19:13.041010 10756 compare_predictions.py:14] Difference found at [139]/layer_8/attention (numpy arrays differ)
+E0807 21:19:13.047924 10756 compare_predictions.py:14] Difference found at [139]/layer_9/attention (numpy arrays differ)
+E0807 21:19:13.055923 10756 compare_predictions.py:14] Difference found at [139]/layer_10/attention (numpy arrays differ)
+E0807 21:19:13.063926 10756 compare_predictions.py:14] Difference found at [139]/layer_11/attention (numpy arrays differ)
+E0807 21:19:13.072259 10756 compare_predictions.py:14] Difference found at [139]/layer_12/attention (numpy arrays differ)
+E0807 21:19:13.072259 10756 compare_predictions.py:14] Difference found at [139]/probas (numpy arrays differ)
+E0807 21:19:13.075259 10756 compare_predictions.py:14] Difference found at [139]/cls_grad (numpy arrays differ)
+E0807 21:19:13.077258 10756 compare_predictions.py:14] Difference found at [139]/token_grad_prompt (numpy arrays differ)
+I0807 21:19:24.231611 10756 tcav.py:359] Result:
+I0807 21:19:24.231611 10756 tcav.py:361] 0.723404255319149
+I0807 21:19:24.255428 10756 tcav.py:362] Random Mean:
+I0807 21:19:24.255428 10756 tcav.py:363] 0.4964539007092199
+I0807 21:19:24.276786 10756 tcav.py:364] ----> p_value
+I0807 21:19:24.277693 10756 tcav.py:365] 2.88160259327375e-05
+I0807 21:19:24.692807 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 21:19:24] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 21:31:33.947019 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 21:31:35.820943 10756 tcav.py:359] Result:
+I0807 21:31:35.821995 10756 tcav.py:361] 0.71
+I0807 21:31:35.821995 10756 tcav.py:362] Random Mean:
+I0807 21:31:35.821995 10756 tcav.py:363] 0.4906666666666667
+I0807 21:31:35.821995 10756 tcav.py:364] ----> p_value
+I0807 21:31:35.821995 10756 tcav.py:365] 7.229494481583029e-05
+I0807 21:31:36.025110 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 21:31:36] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 21:31:42.049018 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 21:31:44.307365 10756 tcav.py:359] Result:
+I0807 21:31:44.307365 10756 tcav.py:361] 0.5776699029126213
+I0807 21:31:44.308364 10756 tcav.py:362] Random Mean:
+I0807 21:31:44.308364 10756 tcav.py:363] 0.4941747572815533
+I0807 21:31:44.308364 10756 tcav.py:364] ----> p_value
+I0807 21:31:44.308364 10756 tcav.py:365] 0.947008914412792
+I0807 21:31:44.758330 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 21:31:44] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 21:31:49.439786 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 21:31:51.340705 10756 tcav.py:359] Result:
+I0807 21:31:51.340705 10756 tcav.py:361] 0.36633663366336633
+I0807 21:31:51.341748 10756 tcav.py:362] Random Mean:
+I0807 21:31:51.341748 10756 tcav.py:363] 0.5016501650165016
+I0807 21:31:51.341748 10756 tcav.py:364] ----> p_value
+I0807 21:31:51.341748 10756 tcav.py:365] 0.8283178164760903
+I0807 21:31:51.522075 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 21:31:51] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 21:31:58.087822 10756 app.py:205] 648 of 648 inputs sent as IDs; reconstituting from dataset 'moderation_dataset'
+I0807 21:31:59.928523 10756 tcav.py:359] Result:
+I0807 21:31:59.928523 10756 tcav.py:361] 0.61
+I0807 21:31:59.928523 10756 tcav.py:362] Random Mean:
+I0807 21:31:59.928523 10756 tcav.py:363] 0.5466666666666666
+I0807 21:31:59.928523 10756 tcav.py:364] ----> p_value
+I0807 21:31:59.928523 10756 tcav.py:365] 0.8913979705124817
+I0807 21:32:00.121245 10756 _internal.py:187] 127.0.0.1 - - [07/Aug/2024 21:32:00] "POST /get_interpretations?model=moderation&dataset_name=moderation_dataset&interpreter=tcav&do_predict=1 HTTP/1.1" 200 -
+I0807 21:32:30.347071 10756 moderation_demo.py:59] File C:\Users\elena\PycharmProjects\lit_bachelor\lit_nlp\examples\my_model_moderation\KoalaAI_Text-Moderation_prediction_cache.pkl deleted.
+
+Process finished with exit code 0
