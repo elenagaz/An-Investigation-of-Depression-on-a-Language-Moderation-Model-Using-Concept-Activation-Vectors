@@ -20,7 +20,7 @@ You will need an Anaconda environment for a faster setup.
     - Add the conda environment to the project as the interpreter
 
 4. **Install Dependencies**
-    - Navigate to the directory of the [package.json](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp) file: https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp
+    - Navigate to the directory of the [package.json](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/blob/main/lit_nlp/package.json) file: https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp
     - Run the following commands to install dependencies and build the project:
       ```
       yarn install
