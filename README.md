@@ -20,7 +20,7 @@ You will need an Anaconda environment for a faster setup.
     - Add the conda environment to the project as the interpreter
 
 4. **Install Dependencies**
-    - Navigate to the directory of the [https://github.com/elenagaz/lit_bachelor/blob/lit_ba/lit_nlp/package.json](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/blob/main/lit_nlp/package.json) file:https://github.com/elenagaz/lit_bachelor/tree/lit_ba/lit_nlp
+    - Navigate to the directory of the [package.json](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp) file: https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp
     - Run the following commands to install dependencies and build the project:
       ```
       yarn install
@@ -62,7 +62,7 @@ All protocols of data generation for depression and random data can be found [he
 
 All files used for the generation of TCAV scores can be found in this [directory](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp/my_model_moderation/TCAV_evaluation_files)
 
-Additionally, all files for validation, including the files used as training data can be found in these directories [1](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp/my_model_moderation/model_validation/KoalaAI_Text-Moderation-v2-small) and [2](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp/my_model_moderation/model_validation/moderation_api_release)
+Additionally, all files for validation, including the files used as training data can be found in these directories [KoalaAI_Text-Moderation-v2-smal](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp/my_model_moderation/model_validation/KoalaAI_Text-Moderation-v2-small) and [moderation_api_release](https://github.com/elenagaz/An-Investigation-of-Depression-on-a-Language-Moderation-Model-Using-Concept-Activation-Vectors/tree/main/lit_nlp/my_model_moderation/model_validation/moderation_api_release)
 
 ## Note: 
 Some edits have been made to ensure compatibility with Windows.
